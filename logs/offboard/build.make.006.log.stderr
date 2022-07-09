@@ -1,0 +1,8 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_test.cpp:10:10:[m[K [01;31m[Kfatal error: [m[KEigen/Eigen: No such file or directory
+   10 | #include [01;31m[K<Eigen/Eigen>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/square_node.dir/build.make:63: CMakeFiles/square_node.dir/src/square_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:837: CMakeFiles/square_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

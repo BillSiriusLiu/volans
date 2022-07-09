@@ -1,0 +1,9 @@
+In file included from [01m[K/home/billliu/trials/volans/src/simulation/gazebo_plugin/PriusHybridPlugin.cc:27[m[K:
+[01m[K/home/billliu/trials/volans/src/simulation/include/PriusHybridPlugin.hh:29:10:[m[K [01;31m[Kfatal error: [m[Ksimulation/Control.h: No such file or directory
+   29 | #include [01;31m[K<simulation/Control.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/PriusHybridPlugin.dir/build.make:63: CMakeFiles/PriusHybridPlugin.dir/gazebo_plugin/PriusHybridPlugin.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:248: CMakeFiles/PriusHybridPlugin.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,7 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:[m[K In function ‘[01m[Kvoid FlyState_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:108:82:[m[K [01;31m[Kerror: [m[K‘[01m[Kradius[m[K’ was not declared in this scope
+  108 |             pos_target_0.pose.position.x =  origin_pos_drone_0.pose.position.x - [01;31m[Kradius[m[K; //起飞到圆轨迹的第一个
+      |                                                                                  [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

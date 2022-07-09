@@ -1,0 +1,377 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_local::init(ros::NodeHandle)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:38:98:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::subscribe<mavros_msgs::State>(std::__cxx11::basic_string<char>, int, void (Uav::*)(const ConstPtr&), Uav_local*)[m[K’
+   38 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, &Uav::state_cb, this[01;31m[K)[m[K;
+      |                                                                                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&)[m[K’
+  402 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:38:98:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kmavros_msgs::State_<std::allocator<void> >[m[K’ and ‘[01m[Kconst ConstPtr&[m[K’ {aka ‘[01m[Kconst boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&[m[K’}
+   38 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, &Uav::state_cb, this[01;36m[K)[m[K;
+      |                                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, T*, const ros::TransportHints&)[m[K’
+  413 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:38:98:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(mavros_msgs::State_<std::allocator<void> >) const[m[K’ and ‘[01m[Kvoid (Uav::)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::)(const boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&)[m[K’} have incompatible cv-qualifiers
+   38 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, &Uav::state_cb, this[01;36m[K)[m[K;
+      |                                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&)[m[K’
+  465 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:38:98:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[KT[m[K’ (‘[01m[KUav[m[K’ and ‘[01m[KUav_local[m[K’)
+   38 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, &Uav::state_cb, this[01;36m[K)[m[K;
+      |                                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, T*, const ros::TransportHints&)[m[K’
+  475 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:38:98:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&) const[m[K’ and ‘[01m[Kvoid (Uav::)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::)(const boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&)[m[K’} have incompatible cv-qualifiers
+   38 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, &Uav::state_cb, this[01;36m[K)[m[K;
+      |                                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  529 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M),
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:38:98:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kmavros_msgs::State_<std::allocator<void> >[m[K’ and ‘[01m[Kconst ConstPtr&[m[K’ {aka ‘[01m[Kconst boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&[m[K’}
+   38 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, &Uav::state_cb, this[01;36m[K)[m[K;
+      |                                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  540 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:38:98:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(mavros_msgs::State_<std::allocator<void> >) const[m[K’ and ‘[01m[Kvoid (Uav::)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::)(const boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&)[m[K’} have incompatible cv-qualifiers
+   38 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, &Uav::state_cb, this[01;36m[K)[m[K;
+      |                                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  594 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:38:98:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::shared_ptr<U>[m[K’ and ‘[01m[KUav_local*[m[K’
+   38 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, &Uav::state_cb, this[01;36m[K)[m[K;
+      |                                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  605 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:38:98:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&) const[m[K’ and ‘[01m[Kvoid (Uav::)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::)(const boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&)[m[K’} have incompatible cv-qualifiers
+   38 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, &Uav::state_cb, this[01;36m[K)[m[K;
+      |                                                                                                  [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&) [with M = mavros_msgs::State_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+  656 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(M), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:656:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kvoid (Uav::*)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::*)(const boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&)[m[K’} to ‘[01m[Kvoid (*)(mavros_msgs::State_<std::allocator<void> >)[m[K’
+  656 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, [01;36m[Kvoid(*fp)(M)[m[K, const TransportHints& transport_hints = TransportHints())
+      |                                                                       [01;36m[K~~~~~~^~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(const boost::shared_ptr<const M>&), const ros::TransportHints&) [with M = mavros_msgs::State_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+  704 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(const boost::shared_ptr<M const>&), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:704:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kvoid (Uav::*)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::*)(const boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&)[m[K’} to ‘[01m[Kvoid (*)(const boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&)[m[K’
+  704 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, [01;36m[Kvoid(*fp)(const boost::shared_ptr<M const>&)[m[K, const TransportHints& transport_hints = TransportHints())
+      |                                                                       [01;36m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&) [with M = mavros_msgs::State_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int; ros::VoidConstPtr = boost::shared_ptr<const void>][m[K’
+  750 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (const boost::shared_ptr<M const>&)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:751:50:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[KUav_local*[m[K’ to ‘[01m[Kconst VoidConstPtr&[m[K’ {aka ‘[01m[Kconst boost::shared_ptr<const void>&[m[K’}
+  751 |                              [01;36m[Kconst VoidConstPtr& tracked_object = VoidConstPtr()[m[K, const TransportHints& transport_hints = TransportHints())
+      |                              [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class C> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(C)>&, const VoidConstPtr&, const ros::TransportHints&)[m[K’
+  799 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (C)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:38:98:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(C)>[m[K’ and ‘[01m[Kvoid (Uav::*)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::*)(const boost::shared_ptr<const mavros_msgs::State_<std::allocator<void> > >&)[m[K’}
+   38 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, &Uav::state_cb, this[01;36m[K)[m[K;
+      |                                                                                                  [01;36m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:39:122:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::subscribe<geometry_msgs::PoseStamped>(std::__cxx11::basic_string<char>, int, void (Uav::*)(const ConstPtr&), Uav_local*)[m[K’
+   39 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, &Uav::pos_cb, this[01;31m[K)[m[K;
+      |                                                                                                                          [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&)[m[K’
+  402 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:39:122:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kgeometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ and ‘[01m[Kconst ConstPtr&[m[K’ {aka ‘[01m[Kconst boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&[m[K’}
+   39 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, &Uav::pos_cb, this[01;36m[K)[m[K;
+      |                                                                                                                          [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, T*, const ros::TransportHints&)[m[K’
+  413 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, T* obj,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:39:122:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(geometry_msgs::PoseStamped_<std::allocator<void> >) const[m[K’ and ‘[01m[Kvoid (Uav::)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::)(const boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&)[m[K’} have incompatible cv-qualifiers
+   39 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, &Uav::pos_cb, this[01;36m[K)[m[K;
+      |                                                                                                                          [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&)[m[K’
+  465 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:39:122:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[KT[m[K’ (‘[01m[KUav[m[K’ and ‘[01m[KUav_local[m[K’)
+   39 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, &Uav::pos_cb, this[01;36m[K)[m[K;
+      |                                                                                                                          [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, T*, const ros::TransportHints&)[m[K’
+  475 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:39:122:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&) const[m[K’ and ‘[01m[Kvoid (Uav::)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::)(const boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&)[m[K’} have incompatible cv-qualifiers
+   39 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, &Uav::pos_cb, this[01;36m[K)[m[K;
+      |                                                                                                                          [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  529 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M),
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:39:122:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kgeometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ and ‘[01m[Kconst ConstPtr&[m[K’ {aka ‘[01m[Kconst boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&[m[K’}
+   39 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, &Uav::pos_cb, this[01;36m[K)[m[K;
+      |                                                                                                                          [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  540 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:39:122:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(geometry_msgs::PoseStamped_<std::allocator<void> >) const[m[K’ and ‘[01m[Kvoid (Uav::)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::)(const boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&)[m[K’} have incompatible cv-qualifiers
+   39 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, &Uav::pos_cb, this[01;36m[K)[m[K;
+      |                                                                                                                          [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  594 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:39:122:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::shared_ptr<U>[m[K’ and ‘[01m[KUav_local*[m[K’
+   39 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, &Uav::pos_cb, this[01;36m[K)[m[K;
+      |                                                                                                                          [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, const boost::shared_ptr<U>&, const ros::TransportHints&)[m[K’
+  605 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:39:122:[m[K [01;36m[Knote: [m[K  types ‘[01m[Kvoid (T::)(const boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&) const[m[K’ and ‘[01m[Kvoid (Uav::)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::)(const boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&)[m[K’} have incompatible cv-qualifiers
+   39 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, &Uav::pos_cb, this[01;36m[K)[m[K;
+      |                                                                                                                          [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&) [with M = geometry_msgs::PoseStamped_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+  656 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(M), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:656:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kvoid (Uav::*)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::*)(const boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&)[m[K’} to ‘[01m[Kvoid (*)(geometry_msgs::PoseStamped_<std::allocator<void> >)[m[K’
+  656 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, [01;36m[Kvoid(*fp)(M)[m[K, const TransportHints& transport_hints = TransportHints())
+      |                                                                       [01;36m[K~~~~~~^~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(const boost::shared_ptr<const M>&), const ros::TransportHints&) [with M = geometry_msgs::PoseStamped_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+  704 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(const boost::shared_ptr<M const>&), const TransportHints& transport_hints = TransportHints())
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:704:77:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kvoid (Uav::*)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::*)(const boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&)[m[K’} to ‘[01m[Kvoid (*)(const boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&)[m[K’
+  704 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, [01;36m[Kvoid(*fp)(const boost::shared_ptr<M const>&)[m[K, const TransportHints& transport_hints = TransportHints())
+      |                                                                       [01;36m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&) [with M = geometry_msgs::PoseStamped_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int; ros::VoidConstPtr = boost::shared_ptr<const void>][m[K’
+  750 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (const boost::shared_ptr<M const>&)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:751:50:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[KUav_local*[m[K’ to ‘[01m[Kconst VoidConstPtr&[m[K’ {aka ‘[01m[Kconst boost::shared_ptr<const void>&[m[K’}
+  751 |                              [01;36m[Kconst VoidConstPtr& tracked_object = VoidConstPtr()[m[K, const TransportHints& transport_hints = TransportHints())
+      |                              [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M, class C> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(C)>&, const VoidConstPtr&, const ros::TransportHints&)[m[K’
+  799 |   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (C)>& callback,
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:39:122:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<void(C)>[m[K’ and ‘[01m[Kvoid (Uav::*)(const ConstPtr&)[m[K’ {aka ‘[01m[Kvoid (Uav::*)(const boost::shared_ptr<const geometry_msgs::PoseStamped_<std::allocator<void> > >&)[m[K’}
+   39 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, &Uav::pos_cb, this[01;36m[K)[m[K;
+      |                                                                                                                          [01;36m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:40:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kmission_cb[m[K’ is not a member of ‘[01m[KUav[m[K’
+   40 |     mission_sub = nh.subscribe(name + "/mission", 10, &Uav::[01;31m[Kmission_cb[m[K, this);
+      |                                                             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_local::follow()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:58:21:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+   58 |     tmp = uav_global[01;31m[K->[m[Kwp[uav_global->move_time_cnt];
+      |                     [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:58:36:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+   58 |     tmp = uav_global->wp[uav_global[01;31m[K->[m[Kmove_time_cnt];
+      |                                    [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:59:38:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+   59 |     tmp.pose.position.x -= uav_global[01;31m[K->[m[Kcell_size/2;
+      |                                      [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:60:38:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+   60 |     tmp.pose.position.y -= uav_global[01;31m[K->[m[Kcell_size/2;
+      |                                      [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_local::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:109:27:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  109 |             if (uav_global[01;31m[K->[m[Kfly_state == FLY || uav_global->fly_state == REST)
+      |                           [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:109:59:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  109 |             if (uav_global->fly_state == FLY || uav_global[01;31m[K->[m[Kfly_state == REST)
+      |                                                           [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:131:32:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  131 |                 if (!uav_global[01;31m[K->[m[Kinterest.empty())
+      |                                [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:133:55:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  133 |                     waypoints tmp = zig_zag(uav_global[01;31m[K->[m[Kcell_size, uav_global->cell_size, height,
+      |                                                       [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:133:78:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  133 |                     waypoints tmp = zig_zag(uav_global->cell_size, uav_global[01;31m[K->[m[Kcell_size, height,
+      |                                                                              [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:134:39:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  134 |                             uav_global[01;31m[K->[m[Kinterest[0].position.x, uav_global->interest[0].position.y, cell_size);
+      |                                       [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:134:75:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  134 |                             uav_global->interest[0].position.x, uav_global[01;31m[K->[m[Kinterest[0].position.y, cell_size);
+      |                                                                           [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:137:31:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  137 |                     uav_global[01;31m[K->[m[Kinterest.erase(uav_global->interest.begin());
+      |                               [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:137:58:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  137 |                     uav_global->interest.erase(uav_global[01;31m[K->[m[Kinterest.begin());
+      |                                                          [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:147:62:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  147 |                 if (move_time_cnt == wp.size() && (uav_global[01;31m[K->[m[Kfly_state == FLYOVER || uav_global->fly_state == OVER))
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:147:98:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  147 |                 if (move_time_cnt == wp.size() && (uav_global->fly_state == FLYOVER || uav_global[01;31m[K->[m[Kfly_state == OVER))
+      |                                                                                                  [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K At global scope:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:195:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Uav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >)[m[K’
+  195 | void [01;31m[KUav_global[m[K::plan_flight(waypoints wps)
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:191:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Uav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >, double, double)[m[K’
+  191 |     void [01;36m[Kplan_flight[m[K(waypoints, double, double);
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:185:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Uav_global[m[K’ defined here
+  185 | class [01;36m[KUav_global[m[K: public Uav
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:26:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUav_global::Uav_global(int, double&, double&)[m[K’
+   26 | Uav_global uav0(0, height_h, c_high[01;31m[K)[m[K;
+      |                                    [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:185:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KUav_global::Uav_global(const Uav_global&)[m[K’
+  185 | class [01;36m[KUav_global[m[K: public Uav
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:185:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:185:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KUav_global::Uav_global(Uav_global&&)[m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:185:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:28:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav0[m[K’ does not name a type
+   28 | [01;31m[Kuav0[m[K.uav_local = &uav1;
+      | [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:45:15:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUav_global::init()[m[K’
+   45 |     uav0.init([01;31m[K)[m[K;
+      |               [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:79:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Uav::init(ros::NodeHandle)[m[K’
+   79 | void [01;36m[KUav[m[K::init(ros::NodeHandle nh)
+      |      [01;36m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:79:6:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:46:15:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUav_local::init()[m[K’
+   46 |     uav1.init([01;31m[K)[m[K;
+      |               [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:36:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Uav_local::init(ros::NodeHandle)[m[K’
+   36 | void [01;36m[KUav_local[m[K::init(ros::NodeHandle nh)
+      |      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:36:6:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:48:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight[m[K’ was not declared in this scope; did you mean ‘[01m[Kheight_l[m[K’?
+   48 |     nh.param<double>("height", [01;31m[Kheight[m[K);
+      |                                [01;31m[K^~~~~~[m[K
+      |                                [32m[Kheight_l[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:56:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav1_current_state[m[K’ was not declared in this scope
+   56 |     while(ros::ok() && !uav0.current_state.connected && ![01;31m[Kuav1_current_state[m[K.connected){
+      |                                                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:63:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >)[m[K’
+   63 |     uav0.plan_flight(zig_zag(length, width, height_h, 0, 0, c_high)[01;31m[K)[m[K;
+      |                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:191:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Uav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >, double, double)[m[K’
+  191 |     void [01;36m[Kplan_flight[m[K(waypoints, double, double);
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:191:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

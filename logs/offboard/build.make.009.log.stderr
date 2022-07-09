@@ -1,0 +1,13 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:[m[K In function ‘[01m[Kvoid pos_cb(const ConstPtr&)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:55:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos_drone[m[K’ was not declared in this scope; did you mean ‘[01m[Kpos_drone1[m[K’?
+   55 |     [01;31m[Kpos_drone[m[K = pos_drone_fcu_enu;
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Kpos_drone1[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:[m[K In function ‘[01m[Kvoid state_cb(const ConstPtr&)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:62:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_state1[m[K’?
+   62 |  [01;31m[Kcurrent_state[m[K = *msg;
+      |  [01;31m[K^~~~~~~~~~~~~[m[K
+      |  [32m[Kcurrent_state1[m[K
+make[2]: *** [CMakeFiles/square_node.dir/build.make:63: CMakeFiles/square_node.dir/src/square_multi_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/square_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,8 @@
+prefix=/home/billliu/trials/volans/install
+
+Name: offboard
+Description: Description of offboard
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

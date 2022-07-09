@@ -1,0 +1,8 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:[m[K In function ‘[01m[Kvoid FlyState_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:252:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kheigth_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kheight_1[m[K’?
+  252 |    if (abs(pos_drone_1.pose.position.z - [01;31m[Kheigth_1[m[K) > 1)
+      |                                          [01;31m[K^~~~~~~~[m[K
+      |                                          [32m[Kheight_1[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/offboard_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

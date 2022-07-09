@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/billliu/trials/volans/devel/.private/gazebo_ros_pkgs/setup.sh

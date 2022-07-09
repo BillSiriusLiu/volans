@@ -1,0 +1,16 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:[m[K In function ‘[01m[Kvoid FlyState_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:154:53:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ktf2::QuadWord::x[m[K’ from type ‘[01m[Kconst tf2Scalar& (tf2::QuadWord::)() const[m[K’ {aka ‘[01m[Kconst double& (tf2::QuadWord::)() const[m[K’} to type ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_x_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+  154 |                 pos_target_0.pose.orientation.x = q.[01;31m[Kx[m[K;
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:155:53:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ktf2::QuadWord::y[m[K’ from type ‘[01m[Kconst tf2Scalar& (tf2::QuadWord::)() const[m[K’ {aka ‘[01m[Kconst double& (tf2::QuadWord::)() const[m[K’} to type ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_y_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+  155 |                 pos_target_0.pose.orientation.y = q.[01;31m[Ky[m[K;
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:156:53:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ktf2::QuadWord::z[m[K’ from type ‘[01m[Kconst tf2Scalar& (tf2::QuadWord::)() const[m[K’ {aka ‘[01m[Kconst double& (tf2::QuadWord::)() const[m[K’} to type ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_z_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+  156 |                 pos_target_0.pose.orientation.z = q.[01;31m[Kz[m[K;
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:157:41:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ktf2::QuadWord::w[m[K’ from type ‘[01m[Kconst tf2Scalar& (tf2::QuadWord::)() const[m[K’ {aka ‘[01m[Kconst double& (tf2::QuadWord::)() const[m[K’} to type ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >::_w_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+  157 |     pos_target_0.pose.orientation.w = q.[01;31m[Kw[m[K;
+      |                                         [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

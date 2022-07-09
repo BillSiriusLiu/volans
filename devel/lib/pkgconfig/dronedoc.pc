@@ -1,0 +1,1 @@
+/home/billliu/trials/volans/devel/.private/dronedoc/lib/pkgconfig/dronedoc.pc

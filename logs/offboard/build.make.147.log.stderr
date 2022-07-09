@@ -1,0 +1,12 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:61:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUav::offboard_on(ros::Rate&)[m[K’
+   61 |     uav0.offboard_on(rate[01;31m[K)[m[K;
+      |                          [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:6[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:108:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Uav::offboard_on()[m[K’
+  108 | void [01;36m[KUav[m[K::offboard_on()
+      |      [01;36m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:108:6:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/class.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

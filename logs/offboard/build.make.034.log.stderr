@@ -1,0 +1,85 @@
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:7[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:[m[K In function ‘[01m[Kvoid FlyState_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:93:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >::_x_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K-Wformat=[m[K]
+   93 |             ROS_INFO([01;35m[K"%d"[m[K, [32m[Korigin_pos_drone_0.pose.position.x[m[K);
+      |                      [01;35m[K^~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                             [32m[K|[m[K
+      |                                                             [32m[Kgeometry_msgs::Point_<std::allocator<void> >::_x_type {aka double}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:93:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   93 |             [01;36m[KROS_INFO[m[K("%d", origin_pos_drone_0.pose.position.x);
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:93:24:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   93 |             ROS_INFO("[01;36m[K%d[m[K", origin_pos_drone_0.pose.position.x);
+      |                       [01;36m[K~^[m[K
+      |                        [01;36m[K|[m[K
+      |                        [01;36m[Kint[m[K
+      |                       [32m[K%f[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:7[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:94:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >::_y_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K-Wformat=[m[K]
+   94 |             ROS_INFO([01;35m[K"%d"[m[K,[32m[Korigin_pos_drone_0.pose.position.y[m[K);
+      |                      [01;35m[K^~~~[m[K [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                            [32m[K|[m[K
+      |                                                            [32m[Kgeometry_msgs::Point_<std::allocator<void> >::_y_type {aka double}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:94:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   94 |             [01;36m[KROS_INFO[m[K("%d",origin_pos_drone_0.pose.position.y);
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:94:24:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   94 |             ROS_INFO("[01;36m[K%d[m[K",origin_pos_drone_0.pose.position.y);
+      |                       [01;36m[K~^[m[K
+      |                        [01;36m[K|[m[K
+      |                        [01;36m[Kint[m[K
+      |                       [32m[K%f[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:7[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:95:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >::_z_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K-Wformat=[m[K]
+   95 |             ROS_INFO([01;35m[K"%d"[m[K,[32m[Korigin_pos_drone_0.pose.position.z[m[K);
+      |                      [01;35m[K^~~~[m[K [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                            [32m[K|[m[K
+      |                                                            [32m[Kgeometry_msgs::Point_<std::allocator<void> >::_z_type {aka double}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:95:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   95 |             [01;36m[KROS_INFO[m[K("%d",origin_pos_drone_0.pose.position.z);
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:95:24:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   95 |             ROS_INFO("[01;36m[K%d[m[K",origin_pos_drone_0.pose.position.z);
+      |                       [01;36m[K~^[m[K
+      |                        [01;36m[K|[m[K
+      |                        [01;36m[Kint[m[K
+      |                       [32m[K%f[m[K

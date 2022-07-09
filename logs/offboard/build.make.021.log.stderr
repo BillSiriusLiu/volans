@@ -1,0 +1,62 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:[m[K In function ‘[01m[Kvoid FlyState_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:77:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+   77 |                 local_pos_pub_0(pos_target_0[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:84:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+   84 |                 local_pos_pub_0(pos_target_0[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:126:41:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  126 |             local_pos_pub_0(pos_target_0[01;31m[K)[m[K;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:136:41:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  136 |             local_pos_pub_0(pos_target_0[01;31m[K)[m[K;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:163:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  163 |                 local_pos_pub_0(pos_target_0[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:193:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  193 |                 local_pos_pub_1(pos_target_1[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:200:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  200 |                 local_pos_pub_1(pos_target_1[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:242:41:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  242 |             local_pos_pub_1(pos_target_1[01;31m[K)[m[K;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:252:41:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  252 |             local_pos_pub_1(pos_target_1[01;31m[K)[m[K;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:279:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  279 |                 local_pos_pub_1(pos_target_1[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/offboard_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:671: CMakeFiles/offboard_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:394:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_cb_0[m[K’ was not declared in this scope; did you mean ‘[01m[Kstate_cb0[m[K’?
+  394 |             ("uav0/mavros/state", 10, [01;31m[Kstate_cb_0[m[K);
+      |                                       [01;31m[K^~~~~~~~~~[m[K
+      |                                       [32m[Kstate_cb0[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:403:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_cb_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstate_cb1[m[K’?
+  403 |             ("uav1/mavros/state", 10, [01;31m[Kstate_cb_1[m[K);
+      |                                       [01;31m[K^~~~~~~~~~[m[K
+      |                                       [32m[Kstate_cb1[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:415:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_0[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_state0[m[K’?
+  415 |     while(ros::ok() && ![01;31m[Kcurrent_state_0[m[K.connected && !current_state_1.connected){
+      |                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                         [32m[Kcurrent_state0[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:415:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_state1[m[K’?
+  415 |     while(ros::ok() && !current_state_0.connected && ![01;31m[Kcurrent_state_1[m[K.connected){
+      |                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                       [32m[Kcurrent_state1[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:447:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_0[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_state0[m[K’?
+  447 |         if( [01;31m[Kcurrent_state_0[m[K.mode != "OFFBOARD" &&
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |             [32m[Kcurrent_state0[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:467:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_state1[m[K’?
+  467 |         if( [01;31m[Kcurrent_state_1[m[K.mode != "OFFBOARD" &&
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |             [32m[Kcurrent_state1[m[K
+make[2]: *** [CMakeFiles/square_node.dir/build.make:63: CMakeFiles/square_node.dir/src/square_multi_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/square_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

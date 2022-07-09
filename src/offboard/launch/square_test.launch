@@ -1,0 +1,17 @@
+<launch> 
+  <arg name="world_path" default="$(find simulation)/worlds/classroom.world" />
+
+  <include file="$(find px4)/launch/multi_sdf.launch">
+    <arg name="world" value="$(arg world_path)" />
+  </include>
+
+  <include file="$(find offboard)/launch/square.launch" >
+ 	<arg name="desire_z" value="20" />
+ 	<arg name="desire_length" value="20" />
+  </include>
+
+  <node pkg="simulation" type="customed_keyboard_control_px4.py" name="customed_keyboard_control_px4" output="screen" launch-prefix="gnome-terminal --tab -e">
+  </node>
+
+</launch>
+

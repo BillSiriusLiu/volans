@@ -1,0 +1,52 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:50:25:[m[K [01;31m[Kerror: [m[K‘[01m[KMountConfigure[m[K’ in namespace ‘[01m[Kmavros_msgs[m[K’ does not name a type
+   50 |     static mavros_msgs::[01;31m[KMountConfigure[m[K mount_config;
+      |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:82:14:[m[K [01;31m[Kerror: [m[K‘[01m[KMountConfigure[m[K’ in namespace ‘[01m[Kmavros_msgs[m[K’ does not name a type
+   82 | mavros_msgs::[01;31m[KMountConfigure[m[K Uav::mount_config;
+      |              [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::init(ros::NodeHandle)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:96:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmount_client[m[K’ was not declared in this scope
+   96 |     [01;31m[Kmount_client[m[K = nh.serviceClient<mavros_msgs::MountConfigure>(name + "/mavros/mount_control/configure");
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:96:50:[m[K [01;31m[Kerror: [m[K‘[01m[KMountConfigure[m[K’ is not a member of ‘[01m[Kmavros_msgs[m[K’
+   96 |     mount_client = nh.serviceClient<mavros_msgs::[01;31m[KMountConfigure[m[K>(name + "/mavros/mount_control/configure");
+      |                                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:96:50:[m[K [01;31m[Kerror: [m[K‘[01m[KMountConfigure[m[K’ is not a member of ‘[01m[Kmavros_msgs[m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:96:106:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::serviceClient<<expression error> >(std::__cxx11::basic_string<char>)[m[K’
+   96 |     mount_client = nh.serviceClient<mavros_msgs::MountConfigure>(name + "/mavros/mount_control/configure"[01;31m[K)[m[K;
+      |                                                                                                          [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1240:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MReq, class MRes> ros::ServiceClient ros::NodeHandle::serviceClient(const string&, bool, const M_string&)[m[K’
+ 1240 |   ServiceClient [01;36m[KserviceClient[m[K(const std::string& service_name, bool persistent = false,
+      |                 [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1240:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:96:106:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   96 |     mount_client = nh.serviceClient<mavros_msgs::MountConfigure>(name + "/mavros/mount_control/configure"[01;31m[K)[m[K;
+      |                                                                                                          [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1260:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Service> ros::ServiceClient ros::NodeHandle::serviceClient(const string&, bool, const M_string&)[m[K’
+ 1260 |   ServiceClient [01;36m[KserviceClient[m[K(const std::string& service_name, bool persistent = false,
+      |                 [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1260:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:96:106:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   96 |     mount_client = nh.serviceClient<mavros_msgs::MountConfigure>(name + "/mavros/mount_control/configure"[01;31m[K)[m[K;
+      |                                                                                                          [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:104:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmount_config[m[K’ was not declared in this scope
+  104 |     [01;31m[Kmount_config[m[K.request.stabilize_roll = true;
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::publish_attitude(geometry_msgs::PoseStamped)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:164:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmount_client[m[K’ was not declared in this scope
+  164 |     [01;31m[Kmount_client[m[K.call(mount_config);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:164:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmount_config[m[K’ was not declared in this scope
+  164 |     mount_client.call([01;31m[Kmount_config[m[K);
+      |                       [01;31m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,17 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:6[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid uav::init(ros::NodeHandle)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:63:83:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid uav::state_cb(const ConstPtr&)[m[K’
+   63 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, [01;31m[Kuav::state_cb[m[K);
+      |                                                                              [01;31m[K~~~~~^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:53:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   53 |     void [01;36m[Kstate_cb[m[K(const mavros_msgs::State::ConstPtr& msg){current_state = *msg;}
+      |          [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:64:109:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid uav::pos_cb(const ConstPtr&)[m[K’
+   64 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, [01;31m[Kuav::pos_cb[m[K);
+      |                                                                                                        [01;31m[K~~~~~^~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:54:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   54 |     void [01;36m[Kpos_cb[m[K(const geometry_msgs::PoseStamped::ConstPtr &msg){drone_pose = *msg;}
+      |          [01;36m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/class.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

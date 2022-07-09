@@ -1,0 +1,14 @@
+/usr/bin/ld: CMakeFiles/offboard_test.dir/src/class.cpp.o: in function `Uav::init(ros::NodeHandle)':
+class.cpp:(.text+0xe6b): undefined reference to `Uav::offb_set_mode'
+/usr/bin/ld: class.cpp:(.text+0xe7e): undefined reference to `Uav::land_set_mode'
+/usr/bin/ld: class.cpp:(.text+0xe91): undefined reference to `Uav::loiter_set_mode'
+/usr/bin/ld: class.cpp:(.text+0xe9c): undefined reference to `Uav::arm_cmd'
+/usr/bin/ld: CMakeFiles/offboard_test.dir/src/class.cpp.o: in function `Uav::flystate_update()':
+class.cpp:(.text+0x1574): undefined reference to `Uav::land_set_mode'
+/usr/bin/ld: class.cpp:(.text+0x1587): undefined reference to `Uav::land_set_mode'
+/usr/bin/ld: class.cpp:(.text+0x1a53): undefined reference to `Uav::land_set_mode'
+/usr/bin/ld: class.cpp:(.text+0x1a66): undefined reference to `Uav::land_set_mode'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:122: /home/billliu/trials/volans/devel/.private/offboard/lib/offboard/offboard_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

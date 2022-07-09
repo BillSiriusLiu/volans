@@ -1,0 +1,5 @@
+Symlinking /home/billliu/trials/volans/devel/share/darknet_ros/cmake/darknet_rosConfig.cmake
+Symlinking /home/billliu/trials/volans/devel/share/darknet_ros/cmake/darknet_rosConfig-version.cmake
+Symlinking /home/billliu/trials/volans/devel/lib/libdarknet_ros_lib.so
+Symlinking /home/billliu/trials/volans/devel/lib/darknet_ros/darknet_ros
+Symlinking /home/billliu/trials/volans/devel/lib/pkgconfig/darknet_ros.pc

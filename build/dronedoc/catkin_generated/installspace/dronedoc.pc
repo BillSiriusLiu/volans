@@ -1,0 +1,8 @@
+prefix=/home/billliu/trials/volans/install
+
+Name: dronedoc
+Description: Description of dronedoc
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lmap_builder
+Requires: geometry_msgs mavros_msgs roscpp sensor_msgs nav_msgs nav_core tf navigation actionlib moveit_core moveit_msgs trajectory_msgs pluginlib

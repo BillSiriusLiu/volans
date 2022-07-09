@@ -1,0 +1,8 @@
+prefix=/home/billliu/trials/volans/devel/.private/px4_control
+
+Name: px4_control
+Description: Description of px4_control
+Version: 0.0.0
+Cflags: -I/home/billliu/trials/volans/src/modules/px4_control/include
+Libs: -L${prefix}/lib 
+Requires: 

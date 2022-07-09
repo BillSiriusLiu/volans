@@ -1,0 +1,142 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:36:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Uav_local::init(ros::NodeHandle)[m[K’
+   36 | void [01;31m[KUav_local[m[K::init(ros::NodeHandle nh)
+      |      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:36:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Uav_local::init(ros::NodeHandle)[m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Uav_local[m[K’ defined here
+   18 | class [01;36m[KUav_local[m[K: public Uav
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_local::follow()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:44:21:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+   44 |     tmp = uav_global[01;31m[K->[m[Kwp[uav_global->move_time_cnt];
+      |                     [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:44:36:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+   44 |     tmp = uav_global->wp[uav_global[01;31m[K->[m[Kmove_time_cnt];
+      |                                    [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:45:38:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+   45 |     tmp.pose.position.x -= uav_global[01;31m[K->[m[Kcell_size/2;
+      |                                      [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:46:38:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+   46 |     tmp.pose.position.y -= uav_global[01;31m[K->[m[Kcell_size/2;
+      |                                      [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_local::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:95:27:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+   95 |             if (uav_global[01;31m[K->[m[Kfly_state == FLY || uav_global->fly_state == REST)
+      |                           [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:95:59:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+   95 |             if (uav_global->fly_state == FLY || uav_global[01;31m[K->[m[Kfly_state == REST)
+      |                                                           [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:117:32:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  117 |                 if (!uav_global[01;31m[K->[m[Kinterest.empty())
+      |                                [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:119:55:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  119 |                     waypoints tmp = zig_zag(uav_global[01;31m[K->[m[Kcell_size, uav_global->cell_size, height,
+      |                                                       [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:119:78:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  119 |                     waypoints tmp = zig_zag(uav_global->cell_size, uav_global[01;31m[K->[m[Kcell_size, height,
+      |                                                                              [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:120:39:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  120 |                             uav_global[01;31m[K->[m[Kinterest[0].position.x, uav_global->interest[0].position.y, cell_size);
+      |                                       [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:120:75:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  120 |                             uav_global->interest[0].position.x, uav_global[01;31m[K->[m[Kinterest[0].position.y, cell_size);
+      |                                                                           [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:123:31:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  123 |                     uav_global[01;31m[K->[m[Kinterest.erase(uav_global->interest.begin());
+      |                               [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:123:58:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  123 |                     uav_global->interest.erase(uav_global[01;31m[K->[m[Kinterest.begin());
+      |                                                          [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:133:62:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  133 |                 if (move_time_cnt == wp.size() && (uav_global[01;31m[K->[m[Kfly_state == FLYOVER || uav_global->fly_state == OVER))
+      |                                                              [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:133:98:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_global[m[K’
+  133 |                 if (move_time_cnt == wp.size() && (uav_global->fly_state == FLYOVER || uav_global[01;31m[K->[m[Kfly_state == OVER))
+      |                                                                                                  [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_global[m[K’
+   16 | class [01;36m[KUav_global[m[K;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K At global scope:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:181:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Uav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >)[m[K’
+  181 | void [01;31m[KUav_global[m[K::plan_flight(waypoints wps)
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:177:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Uav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >, double, double)[m[K’
+  177 |     void [01;36m[Kplan_flight[m[K(waypoints, double, double);
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:171:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Uav_global[m[K’ defined here
+  171 | class [01;36m[KUav_global[m[K: public Uav
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:26:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUav_global::Uav_global(int, double&, double&)[m[K’
+   26 | Uav_global uav0(0, height_h, c_high[01;31m[K)[m[K;
+      |                                    [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:171:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KUav_global::Uav_global(const Uav_global&)[m[K’
+  171 | class [01;36m[KUav_global[m[K: public Uav
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:171:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:171:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KUav_global::Uav_global(Uav_global&&)[m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:171:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:28:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav0[m[K’ does not name a type
+   28 | [01;31m[Kuav0[m[K.uav_local = &uav1;
+      | [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:49:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight[m[K’ was not declared in this scope; did you mean ‘[01m[Kheight_l[m[K’?
+   49 |     nh.param<double>("height", [01;31m[Kheight[m[K);
+      |                                [01;31m[K^~~~~~[m[K
+      |                                [32m[Kheight_l[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:57:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav1_current_state[m[K’ was not declared in this scope
+   57 |     while(ros::ok() && !uav0.current_state.connected && ![01;31m[Kuav1_current_state[m[K.connected){
+      |                                                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:64:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >)[m[K’
+   64 |     uav0.plan_flight(zig_zag(length, width, height_h, 0, 0, c_high)[01;31m[K)[m[K;
+      |                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:177:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Uav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >, double, double)[m[K’
+  177 |     void [01;36m[Kplan_flight[m[K(waypoints, double, double);
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:177:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

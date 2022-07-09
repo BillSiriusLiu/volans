@@ -1,0 +1,12 @@
+In file included from [01m[K/usr/include/string.h:495[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/mid/image_process/ros_darknet/darknet/src/utils.c:3[m[K:
+In function ‘[01m[Kstrncpy[m[K’,
+    inlined from ‘[01m[Kcopy_string[m[K’ at [01m[K/home/billliu/trials/volans/src/mid/image_process/ros_darknet/darknet/src/utils.c:426:5[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/bits/string_fortified.h:106:10:[m[K [01;35m[Kwarning: [m[K‘[01m[K__builtin_strncpy[m[K’ specified bound depends on the length of the source argument [[01;35m[K-Wstringop-overflow=[m[K]
+  106 |   return [01;35m[K__builtin___strncpy_chk (__dest, __src, __len, __bos (__dest))[m[K;
+      |          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/mid/image_process/ros_darknet/darknet/src/utils.c:[m[K In function ‘[01m[Kcopy_string[m[K’:
+[01m[K/home/billliu/trials/volans/src/mid/image_process/ros_darknet/darknet/src/utils.c:426:22:[m[K [01;36m[Knote: [m[Klength computed here
+  426 |     strncpy(copy, s, [01;36m[Kstrlen(s)[m[K+1);
+      |                      [01;36m[K^~~~~~~~~[m[K
+/usr/bin/ld: warning: libopencv_videoio.so.4.2, needed by /home/billliu/trials/volans/devel/.private/darknet_ros/lib/libdarknet_ros_lib.so, may conflict with libopencv_videoio.so.3.4

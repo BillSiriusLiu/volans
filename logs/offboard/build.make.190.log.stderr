@@ -1,0 +1,127 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::pos_cb(const ConstPtr&)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:63:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   63 |         tf2::Quaternion q(msg->[01;31m[Korientation[m[K.x,
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:64:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   64 |                           msg->[01;31m[Korientation[m[K.y,
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:65:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   65 |                           msg->[01;31m[Korientation[m[K.z,
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:66:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   66 |                           msg->[01;31m[Korientation[m[K.w);
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:70:112:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEigen::Matrix<double, -1, 1>::Matrix(const _x_type&, const _y_type&, const _z_type&, double&, double&, double&, int)[m[K’
+   70 |         Eigen::VectorXd tmp(msg->pose.position.x,msg->pose.position.y,msg->pose.position.z, roll, pitch, yaw, 6[01;31m[K)[m[K;
+      |                                                                                                                [01;31m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:458[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:4[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:387:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::RotationBase<OtherDerived, Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::ColsAtCompileTime>&)[m[K’
+  387 |     explicit [01;36m[KMatrix[m[K(const RotationBase<OtherDerived,ColsAtCompileTime>& r);
+      |              [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:387:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:70:112:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::RotationBase<OtherDerived, 1>[m[K’ and ‘[01m[Kconst _x_type[m[K’ {aka ‘[01m[Kconst double[m[K’}
+   70 |         Eigen::VectorXd tmp(msg->pose.position.x,msg->pose.position.y,msg->pose.position.z, roll, pitch, yaw, 6[01;36m[K)[m[K;
+      |                                                                                                                [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:458[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:4[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:376:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::EigenBase<OtherDerived>&)[m[K’
+  376 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const EigenBase<OtherDerived> &other)
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:376:25:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:70:112:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::EigenBase<Derived>[m[K’ and ‘[01m[Kconst _x_type[m[K’ {aka ‘[01m[Kconst double[m[K’}
+   70 |         Eigen::VectorXd tmp(msg->pose.position.x,msg->pose.position.y,msg->pose.position.z, roll, pitch, yaw, 6[01;36m[K)[m[K;
+      |                                                                                                                [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:458[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:4[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:368:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>&) [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1][m[K’
+  368 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const Matrix& other) : Base(other)
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:368:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 7 provided
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:355:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&, const Scalar&) [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1; Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Scalar = double][m[K’
+  355 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const Scalar& x, const Scalar& y, const Scalar& z, const Scalar& w)
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:355:25:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 7 provided
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:345:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&) [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1; Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Scalar = double][m[K’
+  345 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const Scalar& x, const Scalar& y, const Scalar& z)
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:345:25:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 7 provided
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:299:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T0, class T1> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const T0&, const T1&)[m[K’
+  299 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const T0& x, const T1& y)
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:299:25:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:70:112:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 7 provided
+   70 |         Eigen::VectorXd tmp(msg->pose.position.x,msg->pose.position.y,msg->pose.position.z, roll, pitch, yaw, 6[01;36m[K)[m[K;
+      |                                                                                                                [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:458[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:4[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:291:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const T&)[m[K’
+  291 |     EIGEN_STRONG_INLINE explicit [01;36m[KMatrix[m[K(const T& x)
+      |                                  [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:291:34:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:70:112:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 7 provided
+   70 |         Eigen::VectorXd tmp(msg->pose.position.x,msg->pose.position.y,msg->pose.position.z, roll, pitch, yaw, 6[01;36m[K)[m[K;
+      |                                                                                                                [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:458[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:4[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:273:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>&&) [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1][m[K’
+  273 |     [01;36m[KMatrix[m[K(Matrix&& other) EIGEN_NOEXCEPT_IF(std::is_nothrow_move_constructible<Scalar>::value)
+      |     [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:273:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 7 provided
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:267:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(Eigen::internal::constructor_without_unaligned_array_assert) [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1][m[K’
+  267 |     explicit [01;36m[KMatrix[m[K(internal::constructor_without_unaligned_array_assert)
+      |              [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:267:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 7 provided
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:259:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix() [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1][m[K’
+  259 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K() : Base()
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:259:25:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 7 provided
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::init(ros::NodeHandle)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:95:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint_pub[m[K’ was not declared in this scope
+   95 |     [01;31m[Ksetpoint_pub[m[K = nh.advertise<mavros_msgs::PositionTarget>("/mavros/setpoint_raw/local", 10);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::publish_setpoint(const VectorXd&)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:127:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpointl_pub[m[K’ was not declared in this scope
+  127 |     [01;31m[Ksetpointl_pub[m[K.publish(pos_setpoint);
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_global::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:95:24:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+   95 |                 Eigen::[01;31m[KVector6d[m[K tmp = origin_pose;
+      |                        [01;31m[K^~~~~~~~[m[K
+      |                        [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:96:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   96 |                 [01;31m[Ktmp[m[K.pose.position.z = height;
+      |                 [01;31m[K^~~[m[K
+      |                 [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:130:78:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::VectorXd[m[K’ {aka ‘[01m[Kclass Eigen::Matrix<double, -1, 1>[m[K’} has no member named ‘[01m[Kpose[m[K’
+  130 |                         cout << "found interesting cell at (" << target_pose.[01;31m[Kpose[m[K.position.x << " " <<
+      |                                                                              [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:131:45:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::VectorXd[m[K’ {aka ‘[01m[Kclass Eigen::Matrix<double, -1, 1>[m[K’} has no member named ‘[01m[Kpose[m[K’
+  131 |                                 target_pose.[01;31m[Kpose[m[K.position.y << ")" << endl;
+      |                                             [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

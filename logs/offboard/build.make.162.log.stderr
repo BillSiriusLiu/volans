@@ -1,0 +1,41 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:35:36:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_local[m[K’
+   35 |     tmp.pose.position.z = uav_local[01;31m[K->[m[KUav::height;
+      |                                    [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_local[m[K’
+   16 | class [01;36m[KUav_local[m[K;
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:36:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_local[m[K’
+   36 |     uav_local[01;31m[K->[m[KUav::wp.push_back(tmp);
+      |              [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_local[m[K’
+   16 | class [01;36m[KUav_local[m[K;
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_global::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:83:26:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_local[m[K’
+   83 |             if (uav_local[01;31m[K->[m[Kfly_state == FLY || uav_local->fly_state == REST)
+      |                          [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_local[m[K’
+   16 | class [01;36m[KUav_local[m[K;
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:83:57:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_local[m[K’
+   83 |             if (uav_local->fly_state == FLY || uav_local[01;31m[K->[m[Kfly_state == REST)
+      |                                                         [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_local[m[K’
+   16 | class [01;36m[KUav_local[m[K;
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:[m[K At global scope:
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:26:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUav_global::Uav_global(int, double&, double&)[m[K’
+   26 | Uav_global uav0(0, height_h, c_high[01;31m[K)[m[K;
+      |                                    [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KUav_global::Uav_global(const Uav_global&)[m[K’
+   18 | class [01;36m[KUav_global[m[K: public Uav
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KUav_global::Uav_global(Uav_global&&)[m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

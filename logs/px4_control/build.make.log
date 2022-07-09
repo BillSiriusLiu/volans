@@ -1,0 +1,54 @@
+[  6%] Built target auto_2d_nav_node
+[ 12%] Built target tracking_down_kcf_quadrotor_node
+[ 15%] [32mBuilding CXX object CMakeFiles/tracking_quadrotor_node.dir/src/tracking_quadrotor.cpp.o[0m
+[ 21%] Built target tracking_ardupilot_node
+[35m[1mScanning dependencies of target mission_car_offboard_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mission_car_offboard_node.dir/src/mission_car_offboard.cpp.o[0m
+[ 28%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/mission_car_offboard_node[0m
+[ 28%] Built target mission_car_offboard_node
+[35m[1mScanning dependencies of target collision_avoidance_matlabvfh_node[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/collision_avoidance_matlabvfh_node.dir/src/collision_avoidance_matlabvfh.cpp.o[0m
+[ 34%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/tracking_quadrotor_node[0m
+[ 34%] Built target tracking_quadrotor_node
+[35m[1mScanning dependencies of target avoidance_car_vfh_node[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/avoidance_car_vfh_node.dir/src/avoidance_car_vfh.cpp.o[0m
+[ 40%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/collision_avoidance_matlabvfh_node[0m
+[ 40%] Built target collision_avoidance_matlabvfh_node
+[35m[1mScanning dependencies of target set_mode_node[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/set_mode_node.dir/src/set_mode.cpp.o[0m
+[ 46%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/avoidance_car_vfh_node[0m
+[ 50%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/set_mode_node[0m
+[ 50%] Built target set_mode_node
+[35m[1mScanning dependencies of target omplControlPx4_node[0m
+[ 50%] Built target avoidance_car_vfh_node
+[35m[1mScanning dependencies of target collision_avoidance_vfh_node[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/omplControlPx4_node.dir/src/omplControlPx4.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/collision_avoidance_vfh_node.dir/src/collision_avoidance_vfh.cpp.o[0m
+[ 59%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/omplControlPx4_node[0m
+[ 62%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/collision_avoidance_vfh_node[0m
+[ 62%] Built target omplControlPx4_node
+[35m[1mScanning dependencies of target ros_nav_quadrotor_node[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/ros_nav_quadrotor_node.dir/src/ros_nav_quadrotor.cpp.o[0m
+[ 65%] Built target collision_avoidance_vfh_node
+[35m[1mScanning dependencies of target circular_car_node[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/circular_car_node.dir/src/circular_car.cpp.o[0m
+[ 71%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/circular_car_node[0m
+[ 71%] Built target circular_car_node
+[35m[1mScanning dependencies of target simulinkVFH_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/simulinkVFH_node.dir/src/simulinkVFH.cpp.o[0m
+[ 78%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/ros_nav_quadrotor_node[0m
+[ 78%] Built target ros_nav_quadrotor_node
+[35m[1mScanning dependencies of target circular_node[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/circular_node.dir/src/circular.cpp.o[0m
+[ 84%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/circular_node[0m
+[ 84%] Built target circular_node
+[35m[1mScanning dependencies of target position_to_mavros_node[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/position_to_mavros_node.dir/src/position_to_mavros.cpp.o[0m
+[ 90%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/simulinkVFH_node[0m
+[ 90%] Built target simulinkVFH_node
+[35m[1mScanning dependencies of target landing_quadrotor_node[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/landing_quadrotor_node.dir/src/landing_quadrotor.cpp.o[0m
+[ 96%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/position_to_mavros_node[0m
+[ 96%] Built target position_to_mavros_node
+[100%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/landing_quadrotor_node[0m
+[100%] Built target landing_quadrotor_node

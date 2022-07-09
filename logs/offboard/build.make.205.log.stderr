@@ -1,0 +1,45 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:196:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_pos_pub_0[m[K’ was not declared in this scope
+  196 |     [01;31m[Klocal_pos_pub_0[m[K = nh.advertise<geometry_msgs::PoseStamped>
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:198:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karming_client_0[m[K’ was not declared in this scope
+  198 |     [01;31m[Karming_client_0[m[K = nh.serviceClient<mavros_msgs::CommandBool>
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:198:53:[m[K [01;31m[Kerror: [m[K‘[01m[KCommandBool[m[K’ is not a member of ‘[01m[Kmavros_msgs[m[K’
+  198 |     arming_client_0 = nh.serviceClient<mavros_msgs::[01;31m[KCommandBool[m[K>
+      |                                                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:198:53:[m[K [01;31m[Kerror: [m[K‘[01m[KCommandBool[m[K’ is not a member of ‘[01m[Kmavros_msgs[m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:199:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::serviceClient<<expression error> >(const char [23])[m[K’
+  199 |             ("uav0/mavros/cmd/arming"[01;31m[K)[m[K;
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1240:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MReq, class MRes> ros::ServiceClient ros::NodeHandle::serviceClient(const string&, bool, const M_string&)[m[K’
+ 1240 |   ServiceClient [01;36m[KserviceClient[m[K(const std::string& service_name, bool persistent = false,
+      |                 [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1240:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:199:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  199 |             ("uav0/mavros/cmd/arming"[01;31m[K)[m[K;
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1260:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Service> ros::ServiceClient ros::NodeHandle::serviceClient(const string&, bool, const M_string&)[m[K’
+ 1260 |   ServiceClient [01;36m[KserviceClient[m[K(const std::string& service_name, bool persistent = false,
+      |                 [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1260:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:199:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  199 |             ("uav0/mavros/cmd/arming"[01;31m[K)[m[K;
+      |                                      [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:200:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_mode_client_0[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_mode_client[m[K’?
+  200 |     [01;31m[Kset_mode_client_0[m[K = nh.serviceClient<mavros_msgs::SetMode>
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kset_mode_client[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:229:21:[m[K [01;31m[Kerror: [m[K‘[01m[Karming_client[m[K’ was not declared in this scope
+  229 |                 if( [01;31m[Karming_client[m[K.call(arm_cmd) &&
+      |                     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:229:40:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_cmd[m[K’ was not declared in this scope
+  229 |                 if( arming_client.call([01;31m[Karm_cmd[m[K) &&
+      |                                        [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/class.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

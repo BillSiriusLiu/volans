@@ -1,0 +1,29 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::init(ros::NodeHandle)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:101:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint_pub[m[K’ was not declared in this scope
+  101 |     [01;31m[Ksetpoint_pub[m[K = nh.advertise<mavros_msgs::PositionTarget>("/mavros/setpoint_raw/local", 10);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::publish_setpoint(const VectorXd&)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:133:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpointl_pub[m[K’ was not declared in this scope
+  133 |     [01;31m[Ksetpointl_pub[m[K.publish(pos_setpoint);
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_global::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:95:24:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+   95 |                 Eigen::[01;31m[KVector6d[m[K tmp = origin_pose;
+      |                        [01;31m[K^~~~~~~~[m[K
+      |                        [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:96:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   96 |                 [01;31m[Ktmp[m[K.pose.position.z = height;
+      |                 [01;31m[K^~~[m[K
+      |                 [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:130:78:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::VectorXd[m[K’ {aka ‘[01m[Kclass Eigen::Matrix<double, -1, 1>[m[K’} has no member named ‘[01m[Kpose[m[K’
+  130 |                         cout << "found interesting cell at (" << target_pose.[01;31m[Kpose[m[K.position.x << " " <<
+      |                                                                              [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:131:45:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::VectorXd[m[K’ {aka ‘[01m[Kclass Eigen::Matrix<double, -1, 1>[m[K’} has no member named ‘[01m[Kpose[m[K’
+  131 |                                 target_pose.[01;31m[Kpose[m[K.position.y << ")" << endl;
+      |                                             [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

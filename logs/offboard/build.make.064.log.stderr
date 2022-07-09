@@ -1,0 +1,12 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:[m[K In function ‘[01m[Kvoid FlyState_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:135:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_drone_0[m[K’ was not declared in this scope; did you mean ‘[01m[Kpos_drone_0[m[K’?
+  135 |             uav0_path.poses.push_back([01;31m[Kpose_drone_0[m[K);
+      |                                       [01;31m[K^~~~~~~~~~~~[m[K
+      |                                       [32m[Kpos_drone_0[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:275:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_drone_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kpos_drone_1[m[K’?
+  275 |             uav1_path.poses.push_back([01;31m[Kpose_drone_1[m[K);
+      |                                       [01;31m[K^~~~~~~~~~~~[m[K
+      |                                       [32m[Kpos_drone_1[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/offboard_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

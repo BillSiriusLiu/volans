@@ -1,0 +1,8 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::offboard_on()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:154:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K}[m[K’ token
+  154 |     [01;31m[K}[m[K
+      |     [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

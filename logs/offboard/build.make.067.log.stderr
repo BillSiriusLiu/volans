@@ -1,0 +1,24 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:393:61:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Knav_msgs::Path[m[K’ {aka ‘[01m[Knav_msgs::Path_<std::allocator<void> >[m[K’} and ‘[01m[Kros::Publisher[m[K’)
+  393 |     uav0_path = nh.advertise<nav_msgs::Path>("uav0_path", 10[01;31m[K)[m[K;
+      |                                                             [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:13[m[K:
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav_msgs::Path_<std::allocator<void> >& nav_msgs::Path_<std::allocator<void> >::operator=(const nav_msgs::Path_<std::allocator<void> >&)[m[K’
+   24 | struct [01;36m[KPath_[m[K
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kros::Publisher[m[K’ to ‘[01m[Kconst nav_msgs::Path_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav_msgs::Path_<std::allocator<void> >& nav_msgs::Path_<std::allocator<void> >::operator=(nav_msgs::Path_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kros::Publisher[m[K’ to ‘[01m[Knav_msgs::Path_<std::allocator<void> >&&[m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:405:61:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Knav_msgs::Path[m[K’ {aka ‘[01m[Knav_msgs::Path_<std::allocator<void> >[m[K’} and ‘[01m[Kros::Publisher[m[K’)
+  405 |     uav1_path = nh.advertise<nav_msgs::Path>("uav1_path", 10[01;31m[K)[m[K;
+      |                                                             [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:13[m[K:
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav_msgs::Path_<std::allocator<void> >& nav_msgs::Path_<std::allocator<void> >::operator=(const nav_msgs::Path_<std::allocator<void> >&)[m[K’
+   24 | struct [01;36m[KPath_[m[K
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kros::Publisher[m[K’ to ‘[01m[Kconst nav_msgs::Path_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav_msgs::Path_<std::allocator<void> >& nav_msgs::Path_<std::allocator<void> >::operator=(nav_msgs::Path_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kros::Publisher[m[K’ to ‘[01m[Knav_msgs::Path_<std::allocator<void> >&&[m[K’
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/offboard_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

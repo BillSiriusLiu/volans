@@ -1,0 +1,8 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:13[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:[m[K In function ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > > square(double, double, double, double, int)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:97:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ was not declared in this scope
+   97 |             [01;31m[Kq[m[K.setRPY(0, pi/6, 0);
+      |             [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:674: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

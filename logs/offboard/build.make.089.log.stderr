@@ -1,0 +1,7 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:[m[K In function ‘[01m[Kvoid FlyState_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:152:20:[m[K [01;31m[Kerror: [m[K‘[01m[KcreateQuaternionMsgFromRollPitchYaw[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+  152 |           q = tf2::[01;31m[KcreateQuaternionMsgFromRollPitchYaw[m[K(0, pi/6, Omega);
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

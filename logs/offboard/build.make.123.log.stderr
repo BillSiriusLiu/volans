@@ -1,0 +1,12 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:60:45:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > > zig_zag(double, double, double, double, double, double)[m[K’
+   60 |     uav0.plan_flight(zig_zag(20, 10, 0, 0, 5[01;31m[K)[m[K);
+      |                                             [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:8[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:6[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:11:11:[m[K [01;36m[Knote: [m[Kdeclared here
+   11 | waypoints [01;36m[Kzig_zag[m[K(double length, double width, double height, double center_x, double center_y, double cell_size)
+      |           [01;36m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/class.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

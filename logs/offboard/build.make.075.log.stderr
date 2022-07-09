@@ -1,0 +1,16 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:[m[K In function ‘[01m[Kvoid FlyState_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:193:49:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::Pose_<std::allocator<void> >::_orientation_type[m[K’ {aka ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >[m[K’} and ‘[01m[Ktf2::Quaternion[m[K’)
+  193 |                 pos_target_0.pose.orientation = [01;31m[Kq[m[K;
+      |                                                 [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/geometry_msgs/Pose.h:19[m[K,
+                 from [01m[K/opt/ros/noetic/include/geometry_msgs/PoseStamped.h:19[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/geometry_msgs/Quaternion.h:22:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::Quaternion_<std::allocator<void> >& geometry_msgs::Quaternion_<std::allocator<void> >::operator=(const geometry_msgs::Quaternion_<std::allocator<void> >&)[m[K’
+   22 | struct [01;36m[KQuaternion_[m[K
+      |        [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/geometry_msgs/Quaternion.h:22:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Quaternion[m[K’ to ‘[01m[Kconst geometry_msgs::Quaternion_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/noetic/include/geometry_msgs/Quaternion.h:22:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::Quaternion_<std::allocator<void> >& geometry_msgs::Quaternion_<std::allocator<void> >::operator=(geometry_msgs::Quaternion_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/noetic/include/geometry_msgs/Quaternion.h:22:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Quaternion[m[K’ to ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >&&[m[K’
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/offboard_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

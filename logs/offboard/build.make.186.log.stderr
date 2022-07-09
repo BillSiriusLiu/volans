@@ -1,0 +1,750 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:14[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:10:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   10 | [01;36m[Kwaypoints[m[K zig_zag(double length, double width, double height, double center_x, double center_y, double cell_size)
+      | [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:10:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   10 | [01;36m[Kwaypoints[m[K zig_zag(double length, double width, double height, double center_x, double center_y, double cell_size)
+      | [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:[m[K In function ‘[01m[Kint zig_zag(double, double, double, double, double, double)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:12:2:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   12 |  [01;36m[Kwaypoints[m[K wp;
+      |  [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:12:2:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   12 |  [01;36m[Kwaypoints[m[K wp;
+      |  [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:24:24:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+   24 |                 Eigen::[01;31m[KVector6d[m[K tmp;
+      |                        [01;31m[K^~~~~~~~[m[K
+      |                        [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:27:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   27 |                     [01;31m[Ktmp[m[K[0] = min(start_x + cell_size * (0.5 + j), center_x + length/2);
+      |                     [01;31m[K^~~[m[K
+      |                     [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:36:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   36 |                     [01;31m[Ktmp[m[K[0] = max(min(start_x + cell_size * (cnt_x - 0.5 - j), center_x + length/2), center_x - length/2);
+      |                     [01;31m[K^~~[m[K
+      |                     [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:45:28:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+   45 |                     Eigen::[01;31m[KVector6d[m[K tmp2 = tmp;
+      |                            [01;31m[K^~~~~~~~[m[K
+      |                            [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:46:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp2[m[K’ was not declared in this scope
+   46 |                     [01;31m[Ktmp2[m[K[5] = pi/2;
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:47:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kwp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   47 |                     wp.[01;31m[Kpush_back[m[K(tmp2);
+      |                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:49:20:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kwp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   49 |                 wp.[01;31m[Kpush_back[m[K(tmp);
+      |                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:49:30:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   49 |                 wp.push_back([01;31m[Ktmp[m[K);
+      |                              [01;31m[K^~~[m[K
+      |                              [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:53:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kwp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   53 |                     wp.[01;31m[Kpush_back[m[K(tmp);
+      |                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:62:24:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+   62 |                 Eigen::[01;31m[KVector6d[m[K tmp;
+      |                        [01;31m[K^~~~~~~~[m[K
+      |                        [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:65:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   65 |                     [01;31m[Ktmp[m[K[0] = min(start_x + cell_size * (0.5 + i), center_x + length/2);
+      |                     [01;31m[K^~~[m[K
+      |                     [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:74:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   74 |                     [01;31m[Ktmp[m[K[0] = min(start_x + cell_size * (0.5 + i), center_x + length/2);
+      |                     [01;31m[K^~~[m[K
+      |                     [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:83:28:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+   83 |                     Eigen::[01;31m[KVector6d[m[K tmp2 = tmp;
+      |                            [01;31m[K^~~~~~~~[m[K
+      |                            [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:84:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp2[m[K’ was not declared in this scope
+   84 |                     [01;31m[Ktmp2[m[K[5] = 0;
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:85:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kwp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   85 |                     wp.[01;31m[Kpush_back[m[K(tmp2);
+      |                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:87:20:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kwp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   87 |                 wp.[01;31m[Kpush_back[m[K(tmp);
+      |                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:87:30:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   87 |                 wp.push_back([01;31m[Ktmp[m[K);
+      |                              [01;31m[K^~~[m[K
+      |                              [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:91:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kwp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   91 |                     wp.[01;31m[Kpush_back[m[K(tmp);
+      |                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:[m[K At global scope:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:98:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   98 | [01;36m[Kwaypoints[m[K circular(double radius, double center_x, double center_y, double height,int rate = 1000)
+      | [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:98:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   98 | [01;36m[Kwaypoints[m[K circular(double radius, double center_x, double center_y, double height,int rate = 1000)
+      | [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:[m[K In function ‘[01m[Kint circular(double, double, double, double, int)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:100:2:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  100 |  [01;36m[Kwaypoints[m[K wp;
+      |  [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:100:2:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  100 |  [01;36m[Kwaypoints[m[K wp;
+      |  [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:104:16:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+  104 |         Eigen::[01;31m[KVector6d[m[K tmp;
+      |                [01;31m[K^~~~~~~~[m[K
+      |                [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  105 |         [01;31m[Ktmp[m[K[0] = center_x + radius * cos(omega + pi);
+      |         [01;31m[K^~~[m[K
+      |         [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:111:6:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kwp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  111 |   wp.[01;31m[Kpush_back[m[K(tmp);
+      |      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:[m[K At global scope:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:116:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  116 | [01;36m[Kwaypoints[m[K square(double length, double center_x, double center_y, double height, int rate = 1000)
+      | [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:116:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  116 | [01;36m[Kwaypoints[m[K square(double length, double center_x, double center_y, double height, int rate = 1000)
+      | [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:[m[K In function ‘[01m[Kint square(double, double, double, double, int)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:118:2:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  118 |  [01;36m[Kwaypoints[m[K wp;
+      |  [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:118:2:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  118 |  [01;36m[Kwaypoints[m[K wp;
+      |  [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:122:16:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+  122 |         Eigen::[01;31m[KVector6d[m[K tmp;
+      |                [01;31m[K^~~~~~~~[m[K
+      |                [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:123:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  123 |         [01;31m[Ktmp[m[K[2] = height;
+      |         [01;31m[K^~~[m[K
+      |         [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:132:7:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kwp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  132 |    wp.[01;31m[Kpush_back[m[K(tmp);
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:139:7:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kwp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  139 |    wp.[01;31m[Kpush_back[m[K(tmp);
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:146:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kwp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  146 |             wp.[01;31m[Kpush_back[m[K(tmp);
+      |                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:153:7:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kwp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  153 |    wp.[01;31m[Kpush_back[m[K(tmp);
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K At global scope:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:24:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   24 |     [01;36m[Kwaypoints[m[K wp;
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:24:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   24 |     [01;36m[Kwaypoints[m[K wp;
+      |     [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:41:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ in namespace ‘[01m[KEigen[m[K’ does not name a type; did you mean ‘[01m[KVectorXd[m[K’?
+   41 |     Eigen::[01;31m[KVector6d[m[K drone_pose;
+      |            [01;31m[K^~~~~~~~[m[K
+      |            [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ in namespace ‘[01m[KEigen[m[K’ does not name a type; did you mean ‘[01m[KVectorXd[m[K’?
+   42 |     Eigen::[01;31m[KVector6d[m[K target_pose;          //offboard模式下，发送给飞控的期望值
+      |            [01;31m[K^~~~~~~~[m[K
+      |            [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:43:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ in namespace ‘[01m[KEigen[m[K’ does not name a type; did you mean ‘[01m[KVectorXd[m[K’?
+   43 |     Eigen::[01;31m[KVector6d[m[K origin_pose;          // the origin position when offboard
+      |            [01;31m[K^~~~~~~~[m[K
+      |            [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:44:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ in namespace ‘[01m[KEigen[m[K’ does not name a type; did you mean ‘[01m[KVectorXd[m[K’?
+   44 |     Eigen::[01;31m[KVector6d[m[K target_start_pose;    // the fist position on the circle
+      |            [01;31m[K^~~~~~~~[m[K
+      |            [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:74:29:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::Vector6d[m[K’ has not been declared
+   74 |     bool judge_reach(Eigen::[01;31m[KVector6d[m[K);
+      |                             [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:14[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:76:22:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   76 |     void plan_flight([01;36m[Kwaypoints[m[K);
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:76:22:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   76 |     void plan_flight([01;36m[Kwaypoints[m[K);
+      |                      [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:79:40:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ in namespace ‘[01m[KEigen[m[K’ does not name a type; did you mean ‘[01m[KVectorXd[m[K’?
+   79 |     void publish_setpoint(const Eigen::[01;31m[KVector6d[m[K&);
+      |                                        [01;31m[K^~~~~~~~[m[K
+      |                                        [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::pos_cb(const ConstPtr&)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:63:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   63 |         tf2::Quaternion q(msg->[01;31m[Korientation[m[K.x,
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:64:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   64 |                           msg->[01;31m[Korientation[m[K.y,
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:65:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   65 |                           msg->[01;31m[Korientation[m[K.z,
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:66:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   66 |                           msg->[01;31m[Korientation[m[K.w);
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:70:16:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+   70 |         Eigen::[01;31m[KVector6d[m[K tmp(msg->pose.position.x,msg->pose.position.y,msg->pose.position.z, roll, pitch, yaw);
+      |                [01;31m[K^~~~~~~~[m[K
+      |                [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:71:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+   71 |         [01;31m[Kdrone_pose[m[K = tmp;
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:71:22:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   71 |         drone_pose = [01;31m[Ktmp[m[K;
+      |                      [01;31m[K^~~[m[K
+      |                      [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::init(ros::NodeHandle)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:95:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint_pub[m[K’ was not declared in this scope
+   95 |     [01;31m[Ksetpoint_pub[m[K = nh.advertise<mavros_msgs::PositionTarget>("/mavros/setpoint_raw/local", 10);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K At global scope:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:111:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Uav::publish_setpoint(const Vector3d&, float)[m[K’
+  111 | void [01;31m[KUav[m[K::publish_setpoint(const Eigen::Vector3d& pos_sp, float yaw_sp)
+      |      [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:79:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Uav::publish_setpoint(const int&)[m[K’
+   79 |     void [01;36m[Kpublish_setpoint[m[K(const Eigen::Vector6d&);
+      |          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:20:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Uav[m[K’ defined here
+   20 | class [01;36m[KUav[m[K
+      |       [01;36m[K^~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:160:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool Uav::judge_reach[m[K’ is not a static data member of ‘[01m[Kclass Uav[m[K’
+  160 | bool [01;31m[KUav[m[K::judge_reach(Eigen::Vector6d pose)
+      |      [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:160:30:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+  160 | bool Uav::judge_reach(Eigen::[01;31m[KVector6d[m[K pose)
+      |                              [01;31m[K^~~~~~~~[m[K
+      |                              [32m[KVectorXd[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:14[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:189:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  189 | void Uav::plan_flight([01;36m[Kwaypoints[m[K wps)
+      |                       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:189:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  189 | void Uav::plan_flight([01;36m[Kwaypoints[m[K wps)
+      |                       [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:201:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+  201 |                 [01;31m[Ktarget_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:201:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+  201 |                 target_pose = [01;31m[Kdrone_pose[m[K;
+      |                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:202:17:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_pose[m[K’ was not declared in this scope
+  202 |                 [01;31m[Korigin_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:208:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+  208 |                 [01;31m[Ktarget_pose[m[K = origin_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:208:31:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_pose[m[K’ was not declared in this scope
+  208 |                 target_pose = [01;31m[Korigin_pose[m[K;
+      |                               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:215:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+  215 |    if([01;31m[Kdrone_pose[m[K.pose.position.x == 0 && drone_pose.pose.position.y == 0)    //没有位置信息则执行降落模式
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:228:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+  228 |             [01;31m[Ktarget_pose[m[K = origin_pose;
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:228:27:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_pose[m[K’ was not declared in this scope
+  228 |             target_pose = [01;31m[Korigin_pose[m[K;
+      |                           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:248:47:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  248 |                 target_pose = wp[move_time_cnt[01;31m[K][m[K;
+      |                                               [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:254:41:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((Uav*)this)->Uav::wp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  254 |                 if (move_time_cnt == wp.[01;31m[Ksize[m[K())
+      |                                         [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::publish_path()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:286:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+  286 |     pose.pose.position.x = [01;31m[Kdrone_pose[m[K[0];
+      |                            [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:14[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K At global scope:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:23:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   23 |     [01;36m[Kwaypoints[m[K interest;
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:23:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   23 |     [01;36m[Kwaypoints[m[K interest;
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:26:22:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   26 |     void plan_flight([01;36m[Kwaypoints[m[K);
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:26:22:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   26 |     void plan_flight([01;36m[Kwaypoints[m[K);
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:45:30:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   45 | void Uav_global::plan_flight([01;36m[Kwaypoints[m[K wps)
+      |                              [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:45:30:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+   45 | void Uav_global::plan_flight([01;36m[Kwaypoints[m[K wps)
+      |                              [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_global::plan_flight(int)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:48:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+   48 |     Eigen::[01;31m[KVector6d[m[K tmp;
+      |            [01;31m[K^~~~~~~~[m[K
+      |            [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   49 |     [01;31m[Ktmp[m[K = wp[0];
+      |     [01;31m[K^~~[m[K
+      |     [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:49:15:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+   49 |     tmp = wp[0[01;31m[K][m[K;
+      |               [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:56:19:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[K((Uav_global*)this)->Uav_global::uav_local->Uav_local::<anonymous>.Uav::wp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   56 |     uav_local->wp.[01;31m[Kpush_back[m[K(tmp);
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_global::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:66:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+   66 |                 [01;31m[Ktarget_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:66:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+   66 |                 target_pose = [01;31m[Kdrone_pose[m[K;
+      |                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:67:17:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_pose[m[K’ was not declared in this scope
+   67 |                 [01;31m[Korigin_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:73:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+   73 |                 [01;31m[Ktarget_pose[m[K = origin_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:73:31:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_pose[m[K’ was not declared in this scope
+   73 |                 target_pose = [01;31m[Korigin_pose[m[K;
+      |                               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:80:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+   80 |    if([01;31m[Kdrone_pose[m[K[0] == 0 && drone_pose[1] == 0)    //没有位置信息则执行降落模式
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:93:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+   93 |             if (abs([01;31m[Kdrone_pose[m[K[2] - height) > 1)
+      |                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:95:24:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+   95 |                 Eigen::[01;31m[KVector6d[m[K tmp = origin_pose;
+      |                        [01;31m[K^~~~~~~~[m[K
+      |                        [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:96:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   96 |                 [01;31m[Ktmp[m[K.pose.position.z = height;
+      |                 [01;31m[K^~~[m[K
+      |                 [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:101:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+  101 |                 [01;31m[Ktarget_pose[m[K = wp[0]; //起飞到轨迹的第一个
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:101:35:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  101 |                 target_pose = wp[0[01;31m[K][m[K; //起飞到轨迹的第一个
+      |                                   [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:120:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+  120 |                 [01;31m[Ktarget_pose[m[K = wp[move_time_cnt];
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:120:47:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  120 |                 target_pose = wp[move_time_cnt[01;31m[K][m[K;
+      |                                               [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:132:34:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[K((Uav_global*)this)->Uav_global::interest[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  132 |                         interest.[01;31m[Kpush_back[m[K(target_pose);
+      |                                  [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:136:41:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((Uav_global*)this)->Uav_global::<anonymous>.Uav::wp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  136 |                 if (move_time_cnt == wp.[01;31m[Ksize[m[K())
+      |                                         [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:145:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+  145 |                 [01;31m[Ktarget_pose[m[K = origin_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:145:31:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_pose[m[K’ was not declared in this scope
+  145 |                 target_pose = [01;31m[Korigin_pose[m[K;
+      |                               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_local::follow()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:171:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+  171 |     Eigen::[01;31m[KVector6d[m[K tmp;
+      |            [01;31m[K^~~~~~~~[m[K
+      |            [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:172:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  172 |     [01;31m[Ktmp[m[K = uav_global->drone_pose;
+      |     [01;31m[K^~~[m[K
+      |     [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:172:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Uav_global[m[K’ has no member named ‘[01m[Kdrone_pose[m[K’
+  172 |     tmp = uav_global->[01;31m[Kdrone_pose[m[K;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_local::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:190:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+  190 |                 [01;31m[Ktarget_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:190:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+  190 |                 target_pose = [01;31m[Kdrone_pose[m[K;
+      |                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:191:17:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_pose[m[K’ was not declared in this scope
+  191 |                 [01;31m[Korigin_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:197:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+  197 |                 [01;31m[Ktarget_pose[m[K = origin_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:197:31:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_pose[m[K’ was not declared in this scope
+  197 |                 target_pose = [01;31m[Korigin_pose[m[K;
+      |                               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:204:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+  204 |    if([01;31m[Kdrone_pose[m[K[0] == 0 && drone_pose[1] == 0)    //没有位置信息则执行降落模式
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:217:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+  217 |             if (abs([01;31m[Kdrone_pose[m[K[2] - height) > 1)
+      |                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:219:24:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+  219 |                 Eigen::[01;31m[KVector6d[m[K tmp = origin_pose;
+      |                        [01;31m[K^~~~~~~~[m[K
+      |                        [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:220:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  220 |                 [01;31m[Ktmp[m[K[2] = height;
+      |                 [01;31m[K^~~[m[K
+      |                 [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:225:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+  225 |                 [01;31m[Ktarget_pose[m[K = wp[0]; //起飞到轨迹的第一个
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:225:35:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  225 |                 target_pose = wp[0[01;31m[K][m[K; //起飞到轨迹的第一个
+      |                                   [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:226:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  226 |                 publish_setpoint([01;31m[Ktmp[m[K);
+      |                                  [01;31m[K^~~[m[K
+      |                                  [32m[Ktm[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:14[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:248:21:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  248 |                     [01;36m[Kwaypoints[m[K wp_mission;
+      |                     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:248:21:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  248 |                     [01;36m[Kwaypoints[m[K wp_mission;
+      |                     [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:251:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+  251 |                         wp_mission = circular(5, [01;31m[Kdrone_pose[m[K[0], drone_pose[1], 10);
+      |                                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:253:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kdrone_pose[m[K’ was not declared in this scope
+  253 |                         wp_mission = square(5, [01;31m[Kdrone_pose[m[K[0], drone_pose[1], 5);
+      |                                                [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:254:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kinsert[m[K’ in ‘[01m[K((Uav_local*)this)->Uav_local::<anonymous>.Uav::wp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  254 |                     wp.[01;31m[Kinsert[m[K(wp.begin() + move_time_cnt, wp_mission.begin(), wp_mission.end());
+      |                        [01;31m[K^~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:254:34:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kbegin[m[K’ in ‘[01m[K((Uav_local*)this)->Uav_local::<anonymous>.Uav::wp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  254 |                     wp.insert(wp.[01;31m[Kbegin[m[K() + move_time_cnt, wp_mission.begin(), wp_mission.end());
+      |                                  [01;31m[K^~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:254:70:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kbegin[m[K’ in ‘[01m[Kwp_mission[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  254 |                     wp.insert(wp.begin() + move_time_cnt, wp_mission.[01;31m[Kbegin[m[K(), wp_mission.end());
+      |                                                                      [01;31m[K^~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:254:90:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[Kwp_mission[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  254 |                     wp.insert(wp.begin() + move_time_cnt, wp_mission.begin(), wp_mission.[01;31m[Kend[m[K());
+      |                                                                                          [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:257:43:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kempty[m[K’ in ‘[01m[K((Uav_local*)this)->Uav_local::uav_global->Uav_global::interest[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  257 |                 if (!uav_global->interest.[01;31m[Kempty[m[K())
+      |                                           [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:14[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+    7 | #define waypoints vector<Eigen::[01;31m[KVector6d[m[K> // xyzrpy
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:33:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Kwaypoints[m[K’
+    7 | #define waypoints vector<Eigen::[01;36m[KVector6d[m[K> // xyzrpy
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:259:21:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  259 |                     [01;36m[Kwaypoints[m[K tmp = zig_zag(uav_global->cell_size, uav_global->cell_size, height,
+      |                     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/flight_patterns.hpp:7:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+    7 | #define waypoints vector<Eigen::Vector6d[01;31m[K>[m[K // xyzrpy
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:259:21:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kwaypoints[m[K’
+  259 |                     [01;36m[Kwaypoints[m[K tmp = zig_zag(uav_global->cell_size, uav_global->cell_size, height,
+      |                     [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:260:51:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  260 |                             uav_global->interest[0[01;31m[K][m[K[0], uav_global->interest[0][0], cell_size);
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:260:79:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  260 |                             uav_global->interest[0][0], uav_global->interest[0[01;31m[K][m[K[0], cell_size);
+      |                                                                               [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:262:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kinsert[m[K’ in ‘[01m[K((Uav_local*)this)->Uav_local::<anonymous>.Uav::wp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  262 |                     wp.[01;31m[Kinsert[m[K(wp.end(), tmp.begin(), tmp.end());
+      |                        [01;31m[K^~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:262:34:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[K((Uav_local*)this)->Uav_local::<anonymous>.Uav::wp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  262 |                     wp.insert(wp.[01;31m[Kend[m[K(), tmp.begin(), tmp.end());
+      |                                  [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:262:45:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kbegin[m[K’ in ‘[01m[Ktmp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  262 |                     wp.insert(wp.end(), tmp.[01;31m[Kbegin[m[K(), tmp.end());
+      |                                             [01;31m[K^~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:262:58:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[Ktmp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  262 |                     wp.insert(wp.end(), tmp.begin(), tmp.[01;31m[Kend[m[K());
+      |                                                          [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:263:42:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kerase[m[K’ in ‘[01m[K((Uav_local*)this)->Uav_local::uav_global->Uav_global::interest[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  263 |                     uav_global->interest.[01;31m[Kerase[m[K(uav_global->interest.begin());
+      |                                          [01;31m[K^~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:263:69:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kbegin[m[K’ in ‘[01m[K((Uav_local*)this)->Uav_local::uav_global->Uav_global::interest[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  263 |                     uav_global->interest.erase(uav_global->interest.[01;31m[Kbegin[m[K());
+      |                                                                     [01;31m[K^~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:266:41:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((Uav_local*)this)->Uav_local::<anonymous>.Uav::wp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  266 |                 if (move_time_cnt == wp.[01;31m[Ksize[m[K() && (uav_global->fly_state == FLYOVER || uav_global->fly_state == OVER))
+      |                                         [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:271:46:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((Uav_local*)this)->Uav_local::<anonymous>.Uav::wp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  271 |                 else if (move_time_cnt == wp.[01;31m[Ksize[m[K())
+      |                                              [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:273:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kclear[m[K’ in ‘[01m[K((Uav_local*)this)->Uav_local::<anonymous>.Uav::wp[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  273 |                     wp.[01;31m[Kclear[m[K();
+      |                        [01;31m[K^~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:279:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+  279 |                 [01;31m[Ktarget_pose[m[K = wp[move_time_cnt];
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:279:47:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  279 |                 target_pose = wp[move_time_cnt[01;31m[K][m[K;
+      |                                               [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:291:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope
+  291 |                 [01;31m[Ktarget_pose[m[K = origin_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:291:31:[m[K [01;31m[Kerror: [m[K‘[01m[Korigin_pose[m[K’ was not declared in this scope
+  291 |                 target_pose = [01;31m[Korigin_pose[m[K;
+      |                               [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,17 @@
+[31m[1mCMake Error[0m at /home/billliu/trials/volans/src/sup/path_planning/path_planning/CMakeLists.txt:12 (find_package):
+  By not providing "FindOMPL.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "OMPL", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "OMPL" with any of
+  the following names:
+
+    OMPLConfig.cmake
+    ompl-config.cmake
+
+  Add the installation prefix of "OMPL" to CMAKE_PREFIX_PATH or set
+  "OMPL_DIR" to a directory containing one of the above files.  If "OMPL"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+

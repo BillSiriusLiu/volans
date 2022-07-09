@@ -1,0 +1,16 @@
+In file included from [01m[K/usr/include/opencv4/opencv2/core/types_c.h:84[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/core_c.h:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/highgui/highgui_c.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/mid/image_process/ros_darknet/darknet/include/darknet.h:25[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/mid/image_process/ros_darknet/darknet/src/box.h:3[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/mid/image_process/ros_darknet/darknet/src/image.h:9[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/mid/image_process/ros_darknet/darknet_ros/include/darknet_ros/image_interface.h:12[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/mid/image_process/ros_darknet/darknet_ros/src/image_interface.c:9[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/cvdef.h:704:4:[m[K [01;31m[Kerror: [m[K#error "OpenCV 4.x+ requires enabled C++11 support"
+  704 | #  [01;31m[Kerror[m[K "OpenCV 4.x+ requires enabled C++11 support"
+      |    [01;31m[K^~~~~[m[K
+compilation terminated due to -Wfatal-errors.
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/build.make:76: CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:695: CMakeFiles/darknet_ros_lib.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,18 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:[m[K In function ‘[01m[Kvoid FlyState_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:120:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  120 |                         - origin_pos_drone_0.pose.position.x[01;31m[K)[m[K * (MoveTimeCnt_0/500);
+      |                                                             [01;31m[K^[m[K
+      |                                                             [32m[K;[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:122:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  122 |                         - origin_pos_drone_0.pose.position.y[01;31m[K)[m[K * (MoveTimeCnt_0/500);
+      |                                                             [01;31m[K^[m[K
+      |                                                             [32m[K;[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:187:2:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K}[m[K’ token
+  187 |  [01;31m[K}[m[K
+      |  [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:304:2:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K}[m[K’ token
+  304 |  [01;31m[K}[m[K
+      |  [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/offboard_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

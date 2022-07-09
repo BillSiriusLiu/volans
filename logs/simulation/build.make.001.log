@@ -1,0 +1,70 @@
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_py
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_py
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_py
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_lisp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target _simulation_generate_messages_check_deps_Control[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target _simulation_generate_messages_check_deps_IRLock[0m
+[  0%] Built target _simulation_generate_messages_check_deps_Control
+[35m[1mScanning dependencies of target PriusHybridPlugin[0m
+[  0%] Built target _simulation_generate_messages_check_deps_IRLock
+[35m[1mScanning dependencies of target realsense_gazebo_plugin[0m
+[  5%] [32mBuilding CXX object CMakeFiles/PriusHybridPlugin.dir/gazebo_plugin/PriusHybridPlugin.cc.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/realsense_gazebo_plugin.dir/gazebo_plugin/RealSensePlugin.cpp.o[0m
+In file included from [01m[K/home/billliu/trials/volans/src/simulation/gazebo_plugin/PriusHybridPlugin.cc:27[m[K:
+[01m[K/home/billliu/trials/volans/src/simulation/include/PriusHybridPlugin.hh:29:10:[m[K [01;31m[Kfatal error: [m[Ksimulation/Control.h: No such file or directory
+   29 | #include [01;31m[K<simulation/Control.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/PriusHybridPlugin.dir/build.make:63: CMakeFiles/PriusHybridPlugin.dir/gazebo_plugin/PriusHybridPlugin.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:248: CMakeFiles/PriusHybridPlugin.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 17%] [32mBuilding CXX object CMakeFiles/realsense_gazebo_plugin.dir/gazebo_plugin/gazebo_ros_realsense.cpp.o[0m
+[ 23%] [32m[1mLinking CXX shared library /home/billliu/trials/volans/devel/.private/simulation/lib/librealsense_gazebo_plugin.so[0m
+[ 23%] Built target realsense_gazebo_plugin
+make: *** [Makefile:141: all] Error 2

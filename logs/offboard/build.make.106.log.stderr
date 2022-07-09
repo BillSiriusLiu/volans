@@ -1,0 +1,207 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:6[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:14:1:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K{[m[K’ token
+   14 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+   31 |     [01;31m[Knav_msgs[m[K::Path uav_path;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:56:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   56 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid uav::init(ros::NodeHandle)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:60:78:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid uav::state_cb(const ConstPtr&)[m[K’
+   60 |     state_sub = nh.subscribe<mavros_msgs::State>(name + "/mavros/state", 10, [01;31m[Kstate_cb[m[K);
+      |                                                                              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:50:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   50 |     void [01;36m[Kstate_cb[m[K(const mavros_msgs::State::ConstPtr& msg){current_state = *msg;}
+      |          [01;36m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:61:104:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid uav::pos_cb(const ConstPtr&)[m[K’
+   61 |     position_sub = nh.subscribe<geometry_msgs::PoseStamped>(name + "/mavros/local_position/pose", 100, [01;31m[Kpos_cb[m[K);
+      |                                                                                                        [01;31m[K^~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:51:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   51 |     void [01;36m[Kpos_cb[m[K(const geometry_msgs::PoseStamped::ConstPtr &msg){drone_pose = *msg;}
+      |          [01;36m[K^~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:65:29:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+   65 |     path_pub = nh.advertise<[01;31m[Knav_msgs[m[K::Path>(name + "_path", 10, true);
+      |                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:65:19:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   65 |     path_pub = nh.[01;31m[Kadvertise<nav_msgs::Path>[m[K(name + "_path", 10, true);
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:65:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertise<<expression error> >(std::__cxx11::basic_string<char>, int, bool)[m[K’
+   65 |     path_pub = nh.advertise<nav_msgs::Path>(name + "_path", 10, true[01;31m[K)[m[K;
+      |                                                                     [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)[m[K’
+  249 |     Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size, bool latch = false)
+      |               [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:6[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:65:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   65 |     path_pub = nh.advertise<nav_msgs::Path>(name + "_path", 10, true[01;31m[K)[m[K;
+      |                                                                     [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)[m[K’
+  315 |   Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size,
+      |             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:6[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:65:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   65 |     path_pub = nh.advertise<nav_msgs::Path>(name + "_path", 10, true[01;31m[K)[m[K;
+      |                                                                     [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav_path[m[K’ was not declared in this scope
+   67 |     [01;31m[Kuav_path[m[K.header.frame_id = "odom";
+      |     [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:1[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid uav::flystate_update()[m[K’:
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kprint(NULL, void*&, ros::console::Level&, const char [53], int, const char [28], std::__cxx11::basic_string<char>)[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;31m[K)[m[K
+      |                                                                                                                                                                                [01;31m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:100:17:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  100 |                 [01;36m[KROS_INFO[m[K(name + " Waiting for OFFBOARD command...");
+      |                 [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:161:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)[m[K’
+  161 | ROSCONSOLE_DECL void [01;36m[Kprint[m[K(FilterBase* filter, void* logger, Level level,
+      |                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:163:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 7 from ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’ to ‘[01m[Kconst char*[m[K’
+  163 |     const char* function, [01;36m[Kconst char* fmt[m[K, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:165:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const stringstream&, const char*, int, const char*)[m[K’
+  165 | ROSCONSOLE_DECL void [01;36m[Kprint[m[K(FilterBase* filter, void* logger, Level level,
+      |                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:166:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Kconst char [53][m[K’ to ‘[01m[Kconst stringstream&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_stringstream<char>&[m[K’}
+  166 |     [01;36m[Kconst std::stringstream& str[m[K, const char* file, int line, const char* function);
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kprint(NULL, void*&, ros::console::Level&, const char [53], int, const char [28], std::__cxx11::basic_string<char>)[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;31m[K)[m[K
+      |                                                                                                                                                                                [01;31m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:110:17:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  110 |                 [01;36m[KROS_INFO[m[K(name + "OFFBOARD command recieved!");
+      |                 [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:161:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)[m[K’
+  161 | ROSCONSOLE_DECL void [01;36m[Kprint[m[K(FilterBase* filter, void* logger, Level level,
+      |                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:163:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 7 from ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’ to ‘[01m[Kconst char*[m[K’
+  163 |     const char* function, [01;36m[Kconst char* fmt[m[K, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:165:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const stringstream&, const char*, int, const char*)[m[K’
+  165 | ROSCONSOLE_DECL void [01;36m[Kprint[m[K(FilterBase* filter, void* logger, Level level,
+      |                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:166:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Kconst char [53][m[K’ to ‘[01m[Kconst stringstream&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_stringstream<char>&[m[K’}
+  166 |     [01;36m[Kconst std::stringstream& str[m[K, const char* file, int line, const char* function);
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:6[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:117:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_mode_client_0[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_mode_client[m[K’?
+  117 |                 if( [01;31m[Kset_mode_client_0[m[K.call(land_set_mode) &&
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                     [32m[Kset_mode_client[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:117:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kland_set_mode[m[K’ was not declared in this scope
+  117 |                 if( set_mode_client_0.call([01;31m[Kland_set_mode[m[K) &&
+      |                                            [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kprint(NULL, void*&, ros::console::Level&, const char [53], int, const char [28], std::__cxx11::basic_string<char>)[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;31m[K)[m[K
+      |                                                                                                                                                                                [01;31m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:119:21:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  119 |                     [01;36m[KROS_INFO[m[K(name + " land set");
+      |                     [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:161:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)[m[K’
+  161 | ROSCONSOLE_DECL void [01;36m[Kprint[m[K(FilterBase* filter, void* logger, Level level,
+      |                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:163:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 7 from ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’ to ‘[01m[Kconst char*[m[K’
+  163 |     const char* function, [01;36m[Kconst char* fmt[m[K, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:165:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const stringstream&, const char*, int, const char*)[m[K’
+  165 | ROSCONSOLE_DECL void [01;36m[Kprint[m[K(FilterBase* filter, void* logger, Level level,
+      |                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:166:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Kconst char [53][m[K’ to ‘[01m[Kconst stringstream&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_stringstream<char>&[m[K’}
+  166 |     [01;36m[Kconst std::stringstream& str[m[K, const char* file, int line, const char* function);
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:6[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:192:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_mode_client_0[m[K’ was not declared in this scope; did you mean ‘[01m[Kset_mode_client[m[K’?
+  192 |                     if( [01;31m[Kset_mode_client_0[m[K.call(land_set_mode) &&
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                         [32m[Kset_mode_client[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:192:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kland_set_mode[m[K’ was not declared in this scope
+  192 |                     if( set_mode_client_0.call([01;31m[Kland_set_mode[m[K) &&
+      |                                                [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/console.h:351:176:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kprint(NULL, void*&, ros::console::Level&, const char [53], int, const char [28], std::__cxx11::basic_string<char>)[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__[01;31m[K)[m[K
+      |                                                                                                                                                                                [01;31m[K^[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:354:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  354 |     [01;36m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K(NULL, __VA_ARGS__)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:194:25:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  194 |                         [01;36m[KROS_INFO[m[K(name + " land set");
+      |                         [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:161:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const char*, int, const char*, const char*, ...)[m[K’
+  161 | ROSCONSOLE_DECL void [01;36m[Kprint[m[K(FilterBase* filter, void* logger, Level level,
+      |                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:163:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 7 from ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’ to ‘[01m[Kconst char*[m[K’
+  163 |     const char* function, [01;36m[Kconst char* fmt[m[K, ...) ROSCONSOLE_PRINTF_ATTRIBUTE(7, 8);
+      |                           [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:165:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ros::console::print(ros::console::FilterBase*, void*, ros::console::Level, const stringstream&, const char*, int, const char*)[m[K’
+  165 | ROSCONSOLE_DECL void [01;36m[Kprint[m[K(FilterBase* filter, void* logger, Level level,
+      |                      [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:166:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Kconst char [53][m[K’ to ‘[01m[Kconst stringstream&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_stringstream<char>&[m[K’}
+  166 |     [01;36m[Kconst std::stringstream& str[m[K, const char* file, int line, const char* function);
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:6[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid uav::publish_path()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:221:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav_path[m[K’ was not declared in this scope
+  221 |     [01;31m[Kuav_path[m[K.poses.push_back(pose);
+      |     [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/class.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

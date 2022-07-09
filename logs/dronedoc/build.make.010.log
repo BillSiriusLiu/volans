@@ -1,0 +1,4 @@
+[ 25%] Built target drone_controller
+[ 50%] Built target offboard_sample
+[ 75%] Built target odom_publisher
+[100%] Built target dronedoc_moveit_multi_dof_controller_manager

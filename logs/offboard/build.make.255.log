@@ -1,0 +1,18 @@
+[ 20%] Built target fp
+[ 40%] Built target uav
+[ 60%] Built target ul
+[35m[1mScanning dependencies of target offboard_test[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/offboard_test.dir/src/main.cpp.o[0m
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::init(ros::NodeHandle)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:96:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmount_client[m[K’ was not declared in this scope
+   96 |     [01;31m[Kmount_client[m[K = nh.serviceClient<mavros_msgs::MountConfigure>(name + "/mavros/mount_control/configure");
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::publish_attitude(geometry_msgs::PoseStamped)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:164:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmount_client[m[K’ was not declared in this scope
+  164 |     [01;31m[Kmount_client[m[K.call(mount_config);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

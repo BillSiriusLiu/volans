@@ -1,0 +1,175 @@
+[ 20%] Built target uav
+[ 40%] Built target fp
+[ 60%] Built target ul
+[35m[1mScanning dependencies of target offboard_test[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/offboard_test.dir/src/main.cpp.o[0m
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrol[m[K’ does not name a type
+   53 |     [01;31m[Ktrol[m[K
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:63:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kfly_state[m[K’ does not name a type
+   63 |     }[01;31m[Kfly_state[m[K = WAITING;//初始状态WAITING   could have a problem here
+      |      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::init(ros::NodeHandle)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:97:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmount_client[m[K’ was not declared in this scope
+   97 |     [01;31m[Kmount_client[m[K = nh.serviceClient<mavros_msgs::MountControl>(name + "/mavros/mount_control/configure");
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::publish_attitude(geometry_msgs::PoseStamped)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:165:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmount_client[m[K’ was not declared in this scope
+  165 |     [01;31m[Kmount_client[m[K.call(mount_config);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:218:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kfly_state[m[K’ was not declared in this scope
+  218 |     switch([01;31m[Kfly_state[m[K)
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:220:8:[m[K [01;31m[Kerror: [m[K‘[01m[KWAITING[m[K’ was not declared in this scope
+  220 |   case [01;31m[KWAITING[m[K:
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:232:17:[m[K [01;31m[Kerror: [m[K‘[01m[KCHECKING[m[K’ was not declared in this scope
+  232 |     fly_state = [01;31m[KCHECKING[m[K;
+      |                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:236:8:[m[K [01;31m[Kerror: [m[K‘[01m[KCHECKING[m[K’ was not declared in this scope
+  236 |   case [01;31m[KCHECKING[m[K:
+      |        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:247:17:[m[K [01;31m[Kerror: [m[K‘[01m[KPREPARE[m[K’ was not declared in this scope
+  247 |     fly_state = [01;31m[KPREPARE[m[K;
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:249:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPREPARE[m[K’ was not declared in this scope
+  249 |   case [01;31m[KPREPARE[m[K:
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:256:20:[m[K [01;31m[Kerror: [m[K‘[01m[KREST[m[K’ was not declared in this scope
+  256 |        fly_state = [01;31m[KREST[m[K;
+      |                    [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:261:8:[m[K [01;31m[Kerror: [m[K‘[01m[KREST[m[K’ was not declared in this scope
+  261 |   case [01;31m[KREST[m[K: // wait for other drones in position
+      |        [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:263:16:[m[K [01;31m[Kerror: [m[K‘[01m[KFLY[m[K’ was not declared in this scope
+  263 |    fly_state = [01;31m[KFLY[m[K;
+      |                [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:277:33:[m[K [01;31m[Kerror: [m[K‘[01m[KFLYOVER[m[K’ was not declared in this scope
+  277 |                     fly_state = [01;31m[KFLYOVER[m[K;
+      |                                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:283:8:[m[K [01;31m[Kerror: [m[K‘[01m[KFLYOVER[m[K’ was not declared in this scope
+  283 |   case [01;31m[KFLYOVER[m[K:
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:296:21:[m[K [01;31m[Kerror: [m[K‘[01m[KOVER[m[K’ was not declared in this scope
+  296 |         fly_state = [01;31m[KOVER[m[K;
+      |                     [01;31m[K^~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_global::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:66:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kfly_state[m[K’ was not declared in this scope
+   66 |     switch([01;31m[Kfly_state[m[K)
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:68:8:[m[K [01;31m[Kerror: [m[K‘[01m[KWAITING[m[K’ was not declared in this scope
+   68 |   case [01;31m[KWAITING[m[K:
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:86:17:[m[K [01;31m[Kerror: [m[K‘[01m[KCHECKING[m[K’ was not declared in this scope
+   86 |     fly_state = [01;31m[KCHECKING[m[K;
+      |                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:90:8:[m[K [01;31m[Kerror: [m[K‘[01m[KCHECKING[m[K’ was not declared in this scope
+   90 |   case [01;31m[KCHECKING[m[K:
+      |        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:101:17:[m[K [01;31m[Kerror: [m[K‘[01m[KPREPARE[m[K’ was not declared in this scope
+  101 |     fly_state = [01;31m[KPREPARE[m[K;
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:103:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPREPARE[m[K’ was not declared in this scope
+  103 |   case [01;31m[KPREPARE[m[K:
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:121:24:[m[K [01;31m[Kerror: [m[K‘[01m[KREST[m[K’ was not declared in this scope
+  121 |            fly_state = [01;31m[KREST[m[K;
+      |                        [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:126:8:[m[K [01;31m[Kerror: [m[K‘[01m[KREST[m[K’ was not declared in this scope
+  126 |   case [01;31m[KREST[m[K: // wait for other drones in position
+      |        [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:127:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Uav_local[m[K’ has no member named ‘[01m[Kfly_state[m[K’
+  127 |             if (uav_local->[01;31m[Kfly_state[m[K == FLY || uav_local->fly_state == REST)
+      |                            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:127:41:[m[K [01;31m[Kerror: [m[K‘[01m[KFLY[m[K’ was not declared in this scope
+  127 |             if (uav_local->fly_state == [01;31m[KFLY[m[K || uav_local->fly_state == REST)
+      |                                         [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:127:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Uav_local[m[K’ has no member named ‘[01m[Kfly_state[m[K’
+  127 |             if (uav_local->fly_state == FLY || uav_local->[01;31m[Kfly_state[m[K == REST)
+      |                                                           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:135:8:[m[K [01;31m[Kerror: [m[K‘[01m[KFLY[m[K’ was not declared in this scope
+  135 |   case [01;31m[KFLY[m[K:
+      |        [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:155:33:[m[K [01;31m[Kerror: [m[K‘[01m[KFLYOVER[m[K’ was not declared in this scope
+  155 |                     fly_state = [01;31m[KFLYOVER[m[K;
+      |                                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:161:8:[m[K [01;31m[Kerror: [m[K‘[01m[KFLYOVER[m[K’ was not declared in this scope
+  161 |   case [01;31m[KFLYOVER[m[K:
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:177:21:[m[K [01;31m[Kerror: [m[K‘[01m[KOVER[m[K’ was not declared in this scope
+  177 |         fly_state = [01;31m[KOVER[m[K;
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_local::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:208:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kfly_state[m[K’ was not declared in this scope
+  208 |     switch([01;31m[Kfly_state[m[K)
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:210:8:[m[K [01;31m[Kerror: [m[K‘[01m[KWAITING[m[K’ was not declared in this scope
+  210 |   case [01;31m[KWAITING[m[K:
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:228:17:[m[K [01;31m[Kerror: [m[K‘[01m[KCHECKING[m[K’ was not declared in this scope
+  228 |     fly_state = [01;31m[KCHECKING[m[K;
+      |                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:232:8:[m[K [01;31m[Kerror: [m[K‘[01m[KCHECKING[m[K’ was not declared in this scope
+  232 |   case [01;31m[KCHECKING[m[K:
+      |        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:243:17:[m[K [01;31m[Kerror: [m[K‘[01m[KPREPARE[m[K’ was not declared in this scope
+  243 |     fly_state = [01;31m[KPREPARE[m[K;
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:245:8:[m[K [01;31m[Kerror: [m[K‘[01m[KPREPARE[m[K’ was not declared in this scope
+  245 |   case [01;31m[KPREPARE[m[K:
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:263:24:[m[K [01;31m[Kerror: [m[K‘[01m[KREST[m[K’ was not declared in this scope
+  263 |            fly_state = [01;31m[KREST[m[K;
+      |                        [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:269:8:[m[K [01;31m[Kerror: [m[K‘[01m[KREST[m[K’ was not declared in this scope
+  269 |   case [01;31m[KREST[m[K: // wait for other drones in position
+      |        [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:270:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Uav_global[m[K’ has no member named ‘[01m[Kfly_state[m[K’
+  270 |             if (uav_global->[01;31m[Kfly_state[m[K == FLY || uav_global->fly_state == REST)
+      |                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:270:42:[m[K [01;31m[Kerror: [m[K‘[01m[KFLY[m[K’ was not declared in this scope
+  270 |             if (uav_global->fly_state == [01;31m[KFLY[m[K || uav_global->fly_state == REST)
+      |                                          [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:270:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Uav_global[m[K’ has no member named ‘[01m[Kfly_state[m[K’
+  270 |             if (uav_global->fly_state == FLY || uav_global->[01;31m[Kfly_state[m[K == REST)
+      |                                                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:279:8:[m[K [01;31m[Kerror: [m[K‘[01m[KFLY[m[K’ was not declared in this scope
+  279 |   case [01;31m[KFLY[m[K:
+      |        [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:300:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Uav_global[m[K’ has no member named ‘[01m[Kfly_state[m[K’
+  300 |                 if (move_time_cnt == wp.size() && (uav_global->[01;31m[Kfly_state[m[K == FLYOVER || uav_global->fly_state == OVER))
+      |                                                                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:300:77:[m[K [01;31m[Kerror: [m[K‘[01m[KFLYOVER[m[K’ was not declared in this scope
+  300 |                 if (move_time_cnt == wp.size() && (uav_global->fly_state == [01;31m[KFLYOVER[m[K || uav_global->fly_state == OVER))
+      |                                                                             [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:300:100:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Uav_global[m[K’ has no member named ‘[01m[Kfly_state[m[K’
+  300 |                 if (move_time_cnt == wp.size() && (uav_global->fly_state == FLYOVER || uav_global->[01;31m[Kfly_state[m[K == OVER))
+      |                                                                                                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:300:113:[m[K [01;31m[Kerror: [m[K‘[01m[KOVER[m[K’ was not declared in this scope
+  300 |                 if (move_time_cnt == wp.size() && (uav_global->fly_state == FLYOVER || uav_global->fly_state == [01;31m[KOVER[m[K))
+      |                                                                                                                 [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:326:8:[m[K [01;31m[Kerror: [m[K‘[01m[KFLYOVER[m[K’ was not declared in this scope
+  326 |   case [01;31m[KFLYOVER[m[K:
+      |        [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:342:21:[m[K [01;31m[Kerror: [m[K‘[01m[KOVER[m[K’ was not declared in this scope
+  342 |         fly_state = [01;31m[KOVER[m[K;
+      |                     [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/service_client.h:33[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+/opt/ros/noetic/include/ros/service_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::service_traits::MD5Sum<M>::value() [with M = mavros_msgs::MountControl_<std::allocator<void> >][m[K’:
+[01m[K/opt/ros/noetic/include/ros/service_traits.h:79:102:[m[K   required from ‘[01m[Kconst char* ros::service_traits::md5sum() [with M = mavros_msgs::MountControl_<std::allocator<void> >][m[K’
+[01m[K/opt/ros/noetic/include/ros/service_client_options.h:95:33:[m[K   required from ‘[01m[Kvoid ros::ServiceClientOptions::init(const string&, bool, const M_string&) [with Service = mavros_msgs::MountControl_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; ros::M_string = std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >][m[K’
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1264:5:[m[K   required from ‘[01m[Kros::ServiceClient ros::NodeHandle::serviceClient(const string&, bool, const M_string&) [with Service = mavros_msgs::MountControl_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; ros::M_string = std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >][m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:97:104:[m[K   required from here
+[01m[K/opt/ros/noetic/include/ros/service_traits.h:47:34:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getServerMD5Sum[m[K’ is not a member of ‘[01m[Kmavros_msgs::MountControl_<std::allocator<void> >[m[K’
+   47 |     return [01;31m[KM::__s_getServerMD5Sum()[m[K.c_str();
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

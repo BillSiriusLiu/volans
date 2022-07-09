@@ -1,0 +1,63 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:28:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Uav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >)[m[K’
+   28 | void [01;31m[KUav_global[m[K::plan_flight(waypoints wps)
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:24:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Uav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >, double, double)[m[K’
+   24 |     void [01;36m[Kplan_flight[m[K(waypoints, double, double);
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Uav_global[m[K’ defined here
+   18 | class [01;36m[KUav_global[m[K: public Uav
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_global::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:83:26:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_local[m[K’
+   83 |             if (uav_local[01;31m[K->[m[Kfly_state == FLY || uav_local->fly_state == REST)
+      |                          [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_local[m[K’
+   16 | class [01;36m[KUav_local[m[K;
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:83:57:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Uav_local[m[K’
+   83 |             if (uav_local->fly_state == FLY || uav_local[01;31m[K->[m[Kfly_state == REST)
+      |                                                         [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:16:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Uav_local[m[K’
+   16 | class [01;36m[KUav_local[m[K;
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_local::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:237:53:[m[K [01;31m[Kerror: [m[K‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<geometry_msgs::PoseStamped_<std::allocator<void> > >, geometry_msgs::PoseStamped_<std::allocator<void> > >::value_type[m[K’ {aka ‘[01m[Kstruct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+  237 |                             uav_global->interest[0].[01;31m[Kposition[m[K.x, uav_global->interest[0].position.y, cell_size);
+      |                                                     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:237:89:[m[K [01;31m[Kerror: [m[K‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<geometry_msgs::PoseStamped_<std::allocator<void> > >, geometry_msgs::PoseStamped_<std::allocator<void> > >::value_type[m[K’ {aka ‘[01m[Kstruct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+  237 |                             uav_global->interest[0].position.x, uav_global->interest[0].[01;31m[Kposition[m[K.y, cell_size);
+      |                                                                                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:[m[K At global scope:
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:26:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUav_global::Uav_global(int, double&, double&)[m[K’
+   26 | Uav_global uav0(0, height_h, c_high[01;31m[K)[m[K;
+      |                                    [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KUav_global::Uav_global(const Uav_global&)[m[K’
+   18 | class [01;36m[KUav_global[m[K: public Uav
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KUav_global::Uav_global(Uav_global&&)[m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:28:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav0[m[K’ does not name a type
+   28 | [01;31m[Kuav0[m[K.uav_local = &uav1;
+      | [01;31m[K^~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:49:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight[m[K’ was not declared in this scope; did you mean ‘[01m[Kheight_l[m[K’?
+   49 |     nh.param<double>("height", [01;31m[Kheight[m[K);
+      |                                [01;31m[K^~~~~~[m[K
+      |                                [32m[Kheight_l[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:57:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav1_current_state[m[K’ was not declared in this scope
+   57 |     while(ros::ok() && !uav0.current_state.connected && ![01;31m[Kuav1_current_state[m[K.connected){
+      |                                                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:64:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >)[m[K’
+   64 |     uav0.plan_flight(zig_zag(length, width, height_h, 0, 0, c_high)[01;31m[K)[m[K;
+      |                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:24:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Uav_global::plan_flight(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >, double, double)[m[K’
+   24 |     void [01;36m[Kplan_flight[m[K(waypoints, double, double);
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:24:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,508 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:41:32:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   41 |     Eigen::VectorXd drone_pose([01;31m[K6[m[K);
+      |                                [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:41:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:33:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   42 |     Eigen::VectorXd target_pose([01;31m[K6[m[K);          //offboard模式下，发送给飞控的期望值
+      |                                 [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:43:33:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   43 |     Eigen::VectorXd origin_pose([01;31m[K6[m[K);          // the origin position when offboard
+      |                                 [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:43:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:44:39:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   44 |     Eigen::VectorXd target_start_pose([01;31m[K6[m[K);    // the fist position on the circle
+      |                                       [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:44:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:74:29:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::Vector6d[m[K’ has not been declared
+   74 |     bool judge_reach(Eigen::[01;31m[KVector6d[m[K);
+      |                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:79:40:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ in namespace ‘[01m[KEigen[m[K’ does not name a type; did you mean ‘[01m[KVectorXd[m[K’?
+   79 |     void publish_setpoint(const Eigen::[01;31m[KVector6d[m[K&);
+      |                                        [01;31m[K^~~~~~~~[m[K
+      |                                        [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::pos_cb(const ConstPtr&)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:63:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   63 |         tf2::Quaternion q(msg->[01;31m[Korientation[m[K.x,
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:64:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   64 |                           msg->[01;31m[Korientation[m[K.y,
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:65:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   65 |                           msg->[01;31m[Korientation[m[K.z,
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:66:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct geometry_msgs::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+   66 |                           msg->[01;31m[Korientation[m[K.w);
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:70:112:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEigen::Matrix<double, -1, 1>::Matrix(const _x_type&, const _y_type&, const _z_type&, double&, double&, double&, int)[m[K’
+   70 |         Eigen::VectorXd tmp(msg->pose.position.x,msg->pose.position.y,msg->pose.position.z, roll, pitch, yaw, 6[01;31m[K)[m[K;
+      |                                                                                                                [01;31m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:458[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:4[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:387:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::RotationBase<OtherDerived, Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::ColsAtCompileTime>&)[m[K’
+  387 |     explicit [01;36m[KMatrix[m[K(const RotationBase<OtherDerived,ColsAtCompileTime>& r);
+      |              [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:387:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:70:112:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::RotationBase<OtherDerived, 1>[m[K’ and ‘[01m[Kconst _x_type[m[K’ {aka ‘[01m[Kconst double[m[K’}
+   70 |         Eigen::VectorXd tmp(msg->pose.position.x,msg->pose.position.y,msg->pose.position.z, roll, pitch, yaw, 6[01;36m[K)[m[K;
+      |                                                                                                                [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:458[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:4[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:376:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::EigenBase<OtherDerived>&)[m[K’
+  376 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const EigenBase<OtherDerived> &other)
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:376:25:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:70:112:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::EigenBase<Derived>[m[K’ and ‘[01m[Kconst _x_type[m[K’ {aka ‘[01m[Kconst double[m[K’}
+   70 |         Eigen::VectorXd tmp(msg->pose.position.x,msg->pose.position.y,msg->pose.position.z, roll, pitch, yaw, 6[01;36m[K)[m[K;
+      |                                                                                                                [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:458[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:4[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:368:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>&) [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1][m[K’
+  368 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const Matrix& other) : Base(other)
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:368:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 7 provided
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:355:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&, const Scalar&) [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1; Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Scalar = double][m[K’
+  355 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const Scalar& x, const Scalar& y, const Scalar& z, const Scalar& w)
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:355:25:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 7 provided
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:345:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Scalar&, const Scalar&, const Scalar&) [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1; Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Scalar = double][m[K’
+  345 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const Scalar& x, const Scalar& y, const Scalar& z)
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:345:25:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 7 provided
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:299:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T0, class T1> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const T0&, const T1&)[m[K’
+  299 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K(const T0& x, const T1& y)
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:299:25:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:70:112:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 7 provided
+   70 |         Eigen::VectorXd tmp(msg->pose.position.x,msg->pose.position.y,msg->pose.position.z, roll, pitch, yaw, 6[01;36m[K)[m[K;
+      |                                                                                                                [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:458[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:4[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:291:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const T&)[m[K’
+  291 |     EIGEN_STRONG_INLINE explicit [01;36m[KMatrix[m[K(const T& x)
+      |                                  [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:291:34:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:70:112:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 7 provided
+   70 |         Eigen::VectorXd tmp(msg->pose.position.x,msg->pose.position.y,msg->pose.position.z, roll, pitch, yaw, 6[01;36m[K)[m[K;
+      |                                                                                                                [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:458[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:4[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:273:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>&&) [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1][m[K’
+  273 |     [01;36m[KMatrix[m[K(Matrix&& other) EIGEN_NOEXCEPT_IF(std::is_nothrow_move_constructible<Scalar>::value)
+      |     [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:273:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 7 provided
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:267:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(Eigen::internal::constructor_without_unaligned_array_assert) [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1][m[K’
+  267 |     explicit [01;36m[KMatrix[m[K(internal::constructor_without_unaligned_array_assert)
+      |              [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:267:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 7 provided
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:259:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix() [with _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1][m[K’
+  259 |     EIGEN_STRONG_INLINE [01;36m[KMatrix[m[K() : Base()
+      |                         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:259:25:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 7 provided
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:71:9:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::drone_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   71 |         [01;31m[Kdrone_pose[m[K = tmp;
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::init(ros::NodeHandle)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:95:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint_pub[m[K’ was not declared in this scope
+   95 |     [01;31m[Ksetpoint_pub[m[K = nh.advertise<mavros_msgs::PositionTarget>("/mavros/setpoint_raw/local", 10);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K At global scope:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:111:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Uav::publish_setpoint(const Vector3d&, float)[m[K’
+  111 | void [01;31m[KUav[m[K::publish_setpoint(const Eigen::Vector3d& pos_sp, float yaw_sp)
+      |      [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:79:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid Uav::publish_setpoint(const int&)[m[K’
+   79 |     void [01;36m[Kpublish_setpoint[m[K(const Eigen::Vector6d&);
+      |          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:20:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Uav[m[K’ defined here
+   20 | class [01;36m[KUav[m[K
+      |       [01;36m[K^~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:160:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool Uav::judge_reach[m[K’ is not a static data member of ‘[01m[Kclass Uav[m[K’
+  160 | bool [01;31m[KUav[m[K::judge_reach(Eigen::Vector6d pose)
+      |      [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:160:30:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+  160 | bool Uav::judge_reach(Eigen::[01;31m[KVector6d[m[K pose)
+      |                              [01;31m[K^~~~~~~~[m[K
+      |                              [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:201:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  201 |                 [01;31m[Ktarget_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:202:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::origin_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  202 |                 [01;31m[Korigin_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:203:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  203 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:208:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  208 |                 [01;31m[Ktarget_pose[m[K = origin_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:209:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  209 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:215:7:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::drone_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  215 |    if([01;31m[Kdrone_pose[m[K.pose.position.x == 0 && drone_pose.pose.position.y == 0)    //没有位置信息则执行降落模式
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:215:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kpose[m[K’
+  215 |    if[34m[K([m[Kdrone_pose.[01;31m[Kp[m[K[32m[Kose[m[K.position.x == 0 && drone_pose.pose.position.y == 0)    //没有位置信息则执行降落模式
+      |      [34m[K~[m[K           [01;31m[K^[m[K[32m[K~~~[m[K
+      |                  [32m[K)[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:228:13:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  228 |             [01;31m[Ktarget_pose[m[K = origin_pose;
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:229:26:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  229 |             target_pose[2[01;31m[K][m[K = 5; //起飞到轨迹的第一个
+      |                          [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:231:30:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  231 |             publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                              [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:233:29:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  233 |             if (judge_reach([01;31m[Ktarget_pose[m[K))
+      |                             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:248:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  248 |                 [01;31m[Ktarget_pose[m[K = wp[move_time_cnt];
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:249:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  249 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:251:33:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  251 |                 if (judge_reach([01;31m[Ktarget_pose[m[K))
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:263:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  263 |                 [01;31m[Ktarget_pose[m[K = origin_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:264:30:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  264 |                 target_pose[2[01;31m[K][m[K = 5;
+      |                              [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:265:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  265 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:267:33:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  267 |                 if (judge_reach([01;31m[Ktarget_pose[m[K))
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::publish_path()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:286:40:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  286 |     pose.pose.position.x = drone_pose[0[01;31m[K][m[K;
+      |                                        [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:287:40:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  287 |     pose.pose.position.y = drone_pose[1[01;31m[K][m[K;
+      |                                        [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:288:40:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  288 |     pose.pose.position.z = drone_pose[2[01;31m[K][m[K;
+      |                                        [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:290:26:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  290 |     q.setRPY(drone_pose[3[01;31m[K][m[K, drone_pose[4], drone_pose[5]);
+      |                          [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:290:41:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  290 |     q.setRPY(drone_pose[3], drone_pose[4[01;31m[K][m[K, drone_pose[5]);
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:290:56:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  290 |     q.setRPY(drone_pose[3], drone_pose[4], drone_pose[5[01;31m[K][m[K);
+      |                                                        [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_global::plan_flight(std::vector<Eigen::Matrix<double, -1, 1> >)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:48:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+   48 |     Eigen::[01;31m[KVector6d[m[K tmp;
+      |            [01;31m[K^~~~~~~~[m[K
+      |            [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   49 |     [01;31m[Ktmp[m[K = wp[0];
+      |     [01;31m[K^~~[m[K
+      |     [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_global::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:66:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   66 |                 [01;31m[Ktarget_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:67:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::origin_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   67 |                 [01;31m[Korigin_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:68:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+   68 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:73:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   73 |                 [01;31m[Ktarget_pose[m[K = origin_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:74:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+   74 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:80:19:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+   80 |    if(drone_pose[0[01;31m[K][m[K == 0 && drone_pose[1] == 0)    //没有位置信息则执行降落模式
+      |                   [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:80:41:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+   80 |    if(drone_pose[0] == 0 && drone_pose[1[01;31m[K][m[K == 0)    //没有位置信息则执行降落模式
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:93:33:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+   93 |             if (abs(drone_pose[2[01;31m[K][m[K - height) > 1)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:95:24:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+   95 |                 Eigen::[01;31m[KVector6d[m[K tmp = origin_pose;
+      |                        [01;31m[K^~~~~~~~[m[K
+      |                        [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:96:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   96 |                 [01;31m[Ktmp[m[K.pose.position.z = height;
+      |                 [01;31m[K^~~[m[K
+      |                 [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:101:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  101 |                 [01;31m[Ktarget_pose[m[K = wp[0]; //起飞到轨迹的第一个
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:102:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  102 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:103:33:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  103 |                 if (judge_reach([01;31m[Ktarget_pose[m[K))
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:120:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  120 |                 [01;31m[Ktarget_pose[m[K = wp[move_time_cnt];
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:121:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  121 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:125:33:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  125 |                 if (judge_reach([01;31m[Ktarget_pose[m[K))
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:130:66:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  130 |                         cout << "found interesting cell at (" << [01;31m[Ktarget_pose[m[K.pose.position.x << " " <<
+      |                                                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:132:44:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  132 |                         interest.push_back([01;31m[Ktarget_pose[m[K);
+      |                                            [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:145:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  145 |                 [01;31m[Ktarget_pose[m[K = origin_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:146:30:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  146 |                 target_pose[2[01;31m[K][m[K = height;
+      |                              [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:147:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  147 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:149:33:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  149 |                 if (judge_reach([01;31m[Ktarget_pose[m[K))
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_local::follow()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:171:12:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+  171 |     Eigen::[01;31m[KVector6d[m[K tmp;
+      |            [01;31m[K^~~~~~~~[m[K
+      |            [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:172:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  172 |     [01;31m[Ktmp[m[K = uav_global->drone_pose;
+      |     [01;31m[K^~~[m[K
+      |     [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:[m[K In member function ‘[01m[Kvoid Uav_local::flystate_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:190:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  190 |                 [01;31m[Ktarget_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:191:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::origin_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  191 |                 [01;31m[Korigin_pose[m[K = drone_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:192:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  192 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:197:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  197 |                 [01;31m[Ktarget_pose[m[K = origin_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:198:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  198 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:204:19:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  204 |    if(drone_pose[0[01;31m[K][m[K == 0 && drone_pose[1] == 0)    //没有位置信息则执行降落模式
+      |                   [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:204:41:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  204 |    if(drone_pose[0] == 0 && drone_pose[1[01;31m[K][m[K == 0)    //没有位置信息则执行降落模式
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:217:33:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  217 |             if (abs(drone_pose[2[01;31m[K][m[K - height) > 1)
+      |                                 [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:219:24:[m[K [01;31m[Kerror: [m[K‘[01m[KVector6d[m[K’ is not a member of ‘[01m[KEigen[m[K’; did you mean ‘[01m[KVectorXd[m[K’?
+  219 |                 Eigen::[01;31m[KVector6d[m[K tmp = origin_pose;
+      |                        [01;31m[K^~~~~~~~[m[K
+      |                        [32m[KVectorXd[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:220:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  220 |                 [01;31m[Ktmp[m[K[2] = height;
+      |                 [01;31m[K^~~[m[K
+      |                 [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:225:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  225 |                 [01;31m[Ktarget_pose[m[K = wp[0]; //起飞到轨迹的第一个
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:226:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ktmp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  226 |                 publish_setpoint([01;31m[Ktmp[m[K);
+      |                                  [01;31m[K^~~[m[K
+      |                                  [32m[Ktm[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:227:33:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  227 |                 if (judge_reach([01;31m[Ktarget_pose[m[K))
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:251:62:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  251 |                         wp_mission = circular(5, drone_pose[0[01;31m[K][m[K, drone_pose[1], 10);
+      |                                                              [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:251:77:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  251 |                         wp_mission = circular(5, drone_pose[0], drone_pose[1[01;31m[K][m[K, 10);
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:253:60:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  253 |                         wp_mission = square(5, drone_pose[0[01;31m[K][m[K, drone_pose[1], 5);
+      |                                                            [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:253:75:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  253 |                         wp_mission = square(5, drone_pose[0], drone_pose[1[01;31m[K][m[K, 5);
+      |                                                                           [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:279:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  279 |                 [01;31m[Ktarget_pose[m[K = wp[move_time_cnt];
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:280:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  280 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:282:33:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  282 |                 if (judge_reach([01;31m[Ktarget_pose[m[K))
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:291:17:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  291 |                 [01;31m[Ktarget_pose[m[K = origin_pose;
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:292:18:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+  292 |     target_pose[2[01;31m[K][m[K = height;
+      |                  [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:293:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  293 |                 publish_setpoint([01;31m[Ktarget_pose[m[K);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:295:33:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[KEigen::VectorXd Uav::target_pose(int)[m[K’
+  295 |                 if (judge_reach([01;31m[Ktarget_pose[m[K))
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:42:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   42 |     Eigen::VectorXd [01;36m[Ktarget_pose[m[K(6);          //offboard模式下，发送给飞控的期望值
+      |                     [01;36m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

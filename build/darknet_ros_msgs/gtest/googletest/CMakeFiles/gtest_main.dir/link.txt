@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++11 -DCV__ENABLE_C_API_CTORS  -shared -Wl,-soname,libgtest_main.so -o ../lib/libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -Wl,-rpath,/home/billliu/trials/volans/build/darknet_ros_msgs/gtest/lib ../lib/libgtest.so -lpthread 

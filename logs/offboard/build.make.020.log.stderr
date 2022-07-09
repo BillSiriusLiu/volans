@@ -1,0 +1,102 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:[m[K In function ‘[01m[Kvoid FlyState_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:74:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+   74 |                 local_pos_pub_0(pos_target_0[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:81:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+   81 |                 local_pos_pub_0(pos_target_0[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:88:18:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kgeometry_msgs::PoseStamped[m[K’ {aka ‘[01m[Kgeometry_msgs::PoseStamped_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+   88 |    if(pos_drone_0[01;31m[K[[m[K0] == 0 && pos_drone_0[1] == 0)    //没有位置信息则执行降落模式
+      |                  [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:88:41:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kgeometry_msgs::PoseStamped[m[K’ {aka ‘[01m[Kgeometry_msgs::PoseStamped_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+   88 |    if(pos_drone_0[0] == 0 && pos_drone_0[01;31m[K[[m[K1] == 0)    //没有位置信息则执行降落模式
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:100:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveTimeCnt_0[m[K’ was not declared in this scope; did you mean ‘[01m[KMoveTimeCnt[m[K’?
+  100 |     [01;31m[KMoveTimeCnt_0[m[K = 0;
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[KMoveTimeCnt[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:109:4:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveTimeCnt_0[m[K’ was not declared in this scope; did you mean ‘[01m[KMoveTimeCnt[m[K’?
+  109 |    [01;31m[KMoveTimeCnt_0[m[K += 2;
+      |    [01;31m[K^~~~~~~~~~~~~[m[K
+      |    [32m[KMoveTimeCnt[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:116:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_pos_target0[m[K’ was not declared in this scope; did you mean ‘[01m[Kstart_pos_target_0[m[K’?
+  116 |    pos_target_0.pose.position.x = origin_pos_drone_0.pose.position.x + ([01;31m[Kstart_pos_target0[m[K.pose.position.x
+      |                                                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                                                         [32m[Kstart_pos_target_0[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:123:41:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  123 |             local_pos_pub_0(pos_target_0[01;31m[K)[m[K;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:133:41:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  133 |             local_pos_pub_0(pos_target_0[01;31m[K)[m[K;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:160:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  160 |                 local_pos_pub_0(pos_target_0[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:190:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  190 |                 local_pos_pub_1(pos_target_1[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:197:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  197 |                 local_pos_pub_1(pos_target_1[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:204:18:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kgeometry_msgs::PoseStamped[m[K’ {aka ‘[01m[Kgeometry_msgs::PoseStamped_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+  204 |    if(pos_drone_1[01;31m[K[[m[K0] == 0 && pos_drone_1[1] == 0)    //没有位置信息则执行降落模式
+      |                  [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:204:41:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kgeometry_msgs::PoseStamped[m[K’ {aka ‘[01m[Kgeometry_msgs::PoseStamped_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+  204 |    if(pos_drone_1[0] == 0 && pos_drone_1[01;31m[K[[m[K1] == 0)    //没有位置信息则执行降落模式
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:216:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveTimeCnt_1[m[K’ was not declared in this scope; did you mean ‘[01m[KMoveTimeCnt[m[K’?
+  216 |     [01;31m[KMoveTimeCnt_1[m[K = 0;
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[KMoveTimeCnt[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:225:4:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveTimeCnt_1[m[K’ was not declared in this scope; did you mean ‘[01m[KMoveTimeCnt[m[K’?
+  225 |    [01;31m[KMoveTimeCnt_1[m[K += 2;
+      |    [01;31m[K^~~~~~~~~~~~~[m[K
+      |    [32m[KMoveTimeCnt[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:232:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_pos_target1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstart_pos_target_1[m[K’?
+  232 |    pos_target_1.pose.position.x = origin_pos_drone_1.pose.position.x + ([01;31m[Kstart_pos_target1[m[K.pose.position.x
+      |                                                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                                                         [32m[Kstart_pos_target_1[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:233:62:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveTimeCnt_0[m[K’ was not declared in this scope; did you mean ‘[01m[KMoveTimeCnt[m[K’?
+  233 |                     - origin_pos_drone_1.pose.position.x) * ([01;31m[KMoveTimeCnt_0[m[K/500);
+      |                                                              [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                              [32m[KMoveTimeCnt[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:239:41:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  239 |             local_pos_pub_1(pos_target_1[01;31m[K)[m[K;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:249:41:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  249 |             local_pos_pub_1(pos_target_1[01;31m[K)[m[K;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:276:45:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (geometry_msgs::PoseStamped&)[m[K’
+  276 |                 local_pos_pub_1(pos_target_1[01;31m[K)[m[K;
+      |                                             [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/offboard_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:671: CMakeFiles/offboard_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:394:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_cb_0[m[K’ was not declared in this scope; did you mean ‘[01m[Kstate_cb0[m[K’?
+  394 |             ("uav0/mavros/state", 10, [01;31m[Kstate_cb_0[m[K);
+      |                                       [01;31m[K^~~~~~~~~~[m[K
+      |                                       [32m[Kstate_cb0[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:403:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_cb_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstate_cb1[m[K’?
+  403 |             ("uav1/mavros/state", 10, [01;31m[Kstate_cb_1[m[K);
+      |                                       [01;31m[K^~~~~~~~~~[m[K
+      |                                       [32m[Kstate_cb1[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:415:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_0[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_state0[m[K’?
+  415 |     while(ros::ok() && ![01;31m[Kcurrent_state_0[m[K.connected && !current_state_1.connected){
+      |                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                         [32m[Kcurrent_state0[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:415:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_state1[m[K’?
+  415 |     while(ros::ok() && !current_state_0.connected && ![01;31m[Kcurrent_state_1[m[K.connected){
+      |                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                       [32m[Kcurrent_state1[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:447:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_0[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_state0[m[K’?
+  447 |         if( [01;31m[Kcurrent_state_0[m[K.mode != "OFFBOARD" &&
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |             [32m[Kcurrent_state0[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/square_multi_test.cpp:467:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_state1[m[K’?
+  467 |         if( [01;31m[Kcurrent_state_1[m[K.mode != "OFFBOARD" &&
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |             [32m[Kcurrent_state1[m[K
+make[2]: *** [CMakeFiles/square_node.dir/build.make:63: CMakeFiles/square_node.dir/src/square_multi_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/square_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

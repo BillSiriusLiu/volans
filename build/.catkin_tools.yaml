@@ -1,0 +1,6 @@
+devel_space: /home/billliu/trials/volans/devel
+install: false
+install_space: /home/billliu/trials/volans/install
+profile: default
+source_space: /home/billliu/trials/volans/src
+workspace: /home/billliu/trials/volans

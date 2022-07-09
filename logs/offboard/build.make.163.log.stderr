@@ -1,0 +1,13 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:26:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KUav_global::Uav_global(int, double&, double&)[m[K’
+   26 | Uav_global uav0(0, height_h, c_high[01;31m[K)[m[K;
+      |                                    [01;31m[K^[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KUav_global::Uav_global(const Uav_global&)[m[K’
+   18 | class [01;36m[KUav_global[m[K: public Uav
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KUav_global::Uav_global(Uav_global&&)[m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav_local.hpp:18:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

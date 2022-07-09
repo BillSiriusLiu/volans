@@ -1,0 +1,18 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:6[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In static member function ‘[01m[Kstatic void uav::state_cb(const ConstPtr&)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:53:67:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Kuav::current_state[m[K’ in static member function
+   53 |     static void state_cb(const mavros_msgs::State::ConstPtr& msg){[01;31m[Kcurrent_state[m[K = *msg;}
+      |                                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:31:24:[m[K [01;36m[Knote: [m[Kdeclared here
+   31 |     mavros_msgs::State [01;36m[Kcurrent_state[m[K;
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In static member function ‘[01m[Kstatic void uav::pos_cb(const ConstPtr&)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:54:73:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[Kuav::drone_pose[m[K’ in static member function
+   54 |     static void pos_cb(const geometry_msgs::PoseStamped::ConstPtr &msg){[01;31m[Kdrone_pose[m[K = *msg;}
+      |                                                                         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:33:32:[m[K [01;36m[Knote: [m[Kdeclared here
+   33 |     geometry_msgs::PoseStamped [01;36m[Kdrone_pose[m[K;
+      |                                [01;36m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/class.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

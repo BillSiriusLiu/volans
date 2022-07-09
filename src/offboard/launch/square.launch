@@ -1,0 +1,16 @@
+<launch>
+    <arg name="world" default="$(find simulation)/worlds/classroom.world" />
+    <arg name="height" default="30" />
+    <arg name="length" default="200"/>
+    <arg name="width" default="200"/>
+    
+    <include file="$(find px4)/launch/posix_sitl.launch">
+        <arg name="world" value="$(arg world)" />
+    </include>
+    
+    <node name="offb_node" pkg="offboard" type="offboard_test" output="screen">
+        <param name="height" value="$(arg height)" />
+        <param name="length" value="$(arg length)" />
+        <param name="width" value="$(arg width)" />
+    </node>
+</launch>

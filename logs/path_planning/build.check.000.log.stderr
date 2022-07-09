@@ -1,0 +1,37 @@
+CMake Warning (dev) at CMakeLists.txt:2 (project):
+  Policy CMP0048 is not set: project() command manages VERSION variables.
+  Run "cmake --help-policy CMP0048" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  The following variable(s) would be set to empty:
+
+    CMAKE_PROJECT_VERSION
+    CMAKE_PROJECT_VERSION_MAJOR
+    CMAKE_PROJECT_VERSION_MINOR
+    CMAKE_PROJECT_VERSION_PATCH
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+[33mWARNING: Target "transform_pointcloud" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "transform_pointcloud" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "transform_pointcloud" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "transform_pointcloud" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "goal_transform" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "goal_transform" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "goal_transform" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "goal_transform" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "traj_gen" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "traj_gen" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "traj_gen" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "traj_gen" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "old_path_planning" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "old_path_planning" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "old_path_planning" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "old_path_planning" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "scale" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "scale" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "scale" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "scale" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "path_planning_node" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "path_planning_node" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "path_planning_node" requests linking to directory "/opt/ros/noetic/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m
+[33mWARNING: Target "path_planning_node" requests linking to directory "/usr/lib/x86_64-linux-gnu".  Targets may link only to libraries.  CMake is dropping the item.[0m

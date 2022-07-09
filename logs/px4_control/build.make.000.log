@@ -1,0 +1,18 @@
+[35m[1mScanning dependencies of target auto_2d_nav_node[0m
+[  3%] [32mBuilding CXX object CMakeFiles/auto_2d_nav_node.dir/src/auto_2d_nav.cpp.o[0m
+[  6%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/auto_2d_nav_node[0m
+[  6%] Built target auto_2d_nav_node
+[35m[1mScanning dependencies of target tracking_down_kcf_quadrotor_node[0m
+[  9%] [32mBuilding CXX object CMakeFiles/tracking_down_kcf_quadrotor_node.dir/src/tracking_down__kcf_quadrotor.cpp.o[0m
+[ 12%] [32m[1mLinking CXX executable /home/billliu/trials/volans/devel/.private/px4_control/lib/px4_control/tracking_down_kcf_quadrotor_node[0m
+[ 12%] Built target tracking_down_kcf_quadrotor_node
+[35m[1mScanning dependencies of target tracking_quadrotor_node[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/tracking_quadrotor_node.dir/src/tracking_quadrotor.cpp.o[0m
+In file included from [01m[K/home/billliu/trials/volans/src/modules/px4_control/src/tracking_quadrotor.cpp:8[m[K:
+[01m[K/home/billliu/trials/volans/src/modules/px4_control/include/tracking_quadrotor.h:3:10:[m[K [01;31m[Kfatal error: [m[Kar_track_alvar_msgs/AlvarMarkers.h: No such file or directory
+    3 | #include [01;31m[K<ar_track_alvar_msgs/AlvarMarkers.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/tracking_quadrotor_node.dir/build.make:63: CMakeFiles/tracking_quadrotor_node.dir/src/tracking_quadrotor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:300: CMakeFiles/tracking_quadrotor_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,16 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/class.cpp:6[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kbool Uav::judge_reach(geometry_msgs::PoseStamped)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:94:10:[m[K [01;31m[Kerror: [m[K‘[01m[KMatrix3x3[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+   94 |     tf2::[01;31m[KMatrix3x3[m[K m1(q1), m2(q2);
+      |          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:95:5:[m[K [01;31m[Kerror: [m[K‘[01m[Km1[m[K’ was not declared in this scope; did you mean ‘[01m[Ky1[m[K’?
+   95 |     [01;31m[Km1[m[K.getRPY(roll1, pitch1, yaw1);
+      |     [01;31m[K^~[m[K
+      |     [32m[Ky1[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:96:5:[m[K [01;31m[Kerror: [m[K‘[01m[Km2[m[K’ was not declared in this scope; did you mean ‘[01m[Kq2[m[K’?
+   96 |     [01;31m[Km2[m[K.getRPY(roll2, pitch2, yaw2);
+      |     [01;31m[K^~[m[K
+      |     [32m[Kq2[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/class.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

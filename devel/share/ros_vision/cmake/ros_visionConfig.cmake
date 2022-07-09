@@ -1,0 +1,1 @@
+/home/billliu/trials/volans/devel/.private/ros_vision/share/ros_vision/cmake/ros_visionConfig.cmake

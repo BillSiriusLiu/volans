@@ -1,0 +1,11 @@
+[  6%] Built target auto_2d_nav_node
+[ 12%] Built target tracking_down_kcf_quadrotor_node
+[ 15%] [32mBuilding CXX object CMakeFiles/tracking_quadrotor_node.dir/src/tracking_quadrotor.cpp.o[0m
+In file included from [01m[K/home/billliu/trials/volans/src/modules/px4_control/src/tracking_quadrotor.cpp:8[m[K:
+[01m[K/home/billliu/trials/volans/src/modules/px4_control/include/tracking_quadrotor.h:3:10:[m[K [01;31m[Kfatal error: [m[Kar_track_alvar_msgs/AlvarMarkers.h: No such file or directory
+    3 | #include [01;31m[K<ar_track_alvar_msgs/AlvarMarkers.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/tracking_quadrotor_node.dir/build.make:63: CMakeFiles/tracking_quadrotor_node.dir/src/tracking_quadrotor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:300: CMakeFiles/tracking_quadrotor_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

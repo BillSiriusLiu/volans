@@ -1,0 +1,52 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::mc_cb(mavros_msgs::MountConfigure::Request&, mavros_msgs::MountConfigure::Response&)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:71:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kmavlink[m[K’ has not been declared
+   71 |         using [01;31m[Kmavlink[m[K::common::MAV_CMD;
+      |               [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:73:27:[m[K [01;31m[Kerror: [m[K‘[01m[Knh[m[K’ was not declared in this scope
+   73 |             auto client = [01;31m[Knh[m[K.serviceClient<mavros_msgs::CommandLong>("cmd/command");
+      |                           [01;31m[K^~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:73:57:[m[K [01;31m[Kerror: [m[K‘[01m[KCommandLong[m[K’ is not a member of ‘[01m[Kmavros_msgs[m[K’; did you mean ‘[01m[KCommandBool[m[K’?
+   73 |             auto client = nh.serviceClient<mavros_msgs::[01;31m[KCommandLong[m[K>("cmd/command");
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+      |                                                         [32m[KCommandBool[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:74:26:[m[K [01;31m[Kerror: [m[K‘[01m[KCommandLong[m[K’ is not a member of ‘[01m[Kmavros_msgs[m[K’; did you mean ‘[01m[KCommandBool[m[K’?
+   74 |             mavros_msgs::[01;31m[KCommandLong[m[K cmd{};
+      |                          [01;31m[K^~~~~~~~~~~[m[K
+      |                          [32m[KCommandBool[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:75:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd[m[K’ was not declared in this scope
+   75 |             [01;31m[Kcmd[m[K.request.broadcast = false;
+      |             [01;31m[K^~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:76:46:[m[K [01;31m[Kerror: [m[K‘[01m[KMAV_CMD[m[K’ has not been declared
+   76 |             cmd.request.command = enum_value([01;31m[KMAV_CMD[m[K::DO_MOUNT_CONFIGURE);
+      |                                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:76:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kenum_value[m[K’ was not declared in this scope
+   76 |             cmd.request.command = [01;31m[Kenum_value[m[K(MAV_CMD::DO_MOUNT_CONFIGURE);
+      |                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:93:20:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K-fpermissive[m[K]
+   93 |         return res.[01;31m[Ksuccess[m[K;
+      |                    [01;31m[K^~~~~~~[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::init(ros::NodeHandle)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:122:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmount_client[m[K’ was not declared in this scope
+  122 |     [01;31m[Kmount_client[m[K = nh.serviceClient<mavros_msgs::MountControl>(name + "/mavros/mount_control/configure");
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:11[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:[m[K In member function ‘[01m[Kvoid Uav::publish_attitude(geometry_msgs::PoseStamped)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:190:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmount_client[m[K’ was not declared in this scope
+  190 |     [01;31m[Kmount_client[m[K.call(mount_config);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/service_client.h:33[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:35[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/main.cpp:6[m[K:
+/opt/ros/noetic/include/ros/service_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::service_traits::MD5Sum<M>::value() [with M = mavros_msgs::MountControl_<std::allocator<void> >][m[K’:
+[01m[K/opt/ros/noetic/include/ros/service_traits.h:79:102:[m[K   required from ‘[01m[Kconst char* ros::service_traits::md5sum() [with M = mavros_msgs::MountControl_<std::allocator<void> >][m[K’
+[01m[K/opt/ros/noetic/include/ros/service_client_options.h:95:33:[m[K   required from ‘[01m[Kvoid ros::ServiceClientOptions::init(const string&, bool, const M_string&) [with Service = mavros_msgs::MountControl_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; ros::M_string = std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >][m[K’
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1264:5:[m[K   required from ‘[01m[Kros::ServiceClient ros::NodeHandle::serviceClient(const string&, bool, const M_string&) [with Service = mavros_msgs::MountControl_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; ros::M_string = std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >][m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/uav.hpp:122:104:[m[K   required from here
+[01m[K/opt/ros/noetic/include/ros/service_traits.h:47:34:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getServerMD5Sum[m[K’ is not a member of ‘[01m[Kmavros_msgs::MountControl_<std::allocator<void> >[m[K’
+   47 |     return [01;31m[KM::__s_getServerMD5Sum()[m[K.c_str();
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:704: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

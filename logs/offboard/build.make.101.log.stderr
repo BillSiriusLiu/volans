@@ -1,0 +1,83 @@
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:[m[K In function ‘[01m[Kvoid mission_cb(const string&)[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:28:46:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Kconst string[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>[m[K’})
+   28 | void mission_cb(const string& msg){mission = [01;31m[K*msg[m[K;}
+      |                                              [01;31m[K^~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:7[m[K:
+[01m[K/usr/include/c++/9/complex:391:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const std::complex<_Tp>&)[m[K’
+  391 |     [01;36m[Koperator[m[K*(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:391:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:28:47:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst string[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+   28 | void mission_cb(const string& msg){mission = *[01;36m[Kmsg[m[K;}
+      |                                               [01;36m[K^~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:7[m[K:
+[01m[K/usr/include/c++/9/complex:400:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const _Tp&)[m[K’
+  400 |     [01;36m[Koperator[m[K*(const complex<_Tp>& __x, const _Tp& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:400:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:28:47:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst string[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+   28 | void mission_cb(const string& msg){mission = *[01;36m[Kmsg[m[K;}
+      |                                               [01;36m[K^~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:7[m[K:
+[01m[K/usr/include/c++/9/complex:409:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const _Tp&, const std::complex<_Tp>&)[m[K’
+  409 |     [01;36m[Koperator[m[K*(const _Tp& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:409:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:28:47:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   28 | void mission_cb(const string& msg){mission = *[01;36m[Kmsg[m[K;}
+      |                                               [01;36m[K^~~[m[K
+In file included from [01m[K/usr/include/boost/function/detail/maybe_include.hpp:22[m[K,
+                 from [01m[K/usr/include/boost/function/detail/function_iterate.hpp:14[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:53[m[K,
+                 from [01m[K/usr/include/boost/function.hpp:71[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:7[m[K:
+/usr/include/boost/function/function_template.hpp: In instantiation of ‘[01m[Kstatic void boost::detail::function::void_function_invoker1<FunctionPtr, R, T0>::invoke(boost::detail::function::function_buffer&, T0) [with FunctionPtr = void (*)(const std::__cxx11::basic_string<char>&); R = void; T0 = const boost::shared_ptr<const std::__cxx11::basic_string<char> >&][m[K’:
+[01m[K/usr/include/boost/function/function_template.hpp:931:38:[m[K   required from ‘[01m[Kvoid boost::function1<R, T1>::assign_to(Functor) [with Functor = void (*)(const std::__cxx11::basic_string<char>&); R = void; T0 = const boost::shared_ptr<const std::__cxx11::basic_string<char> >&][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:720:7:[m[K   required from ‘[01m[Kboost::function1<R, T1>::function1(Functor, typename boost::enable_if_<(! boost::is_integral<Functor>::value), int>::type) [with Functor = void (*)(const std::__cxx11::basic_string<char>&); R = void; T0 = const boost::shared_ptr<const std::__cxx11::basic_string<char> >&; typename boost::enable_if_<(! boost::is_integral<Functor>::value), int>::type = int][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:1068:16:[m[K   required from ‘[01m[Kboost::function<R(T0)>::function(Functor, typename boost::enable_if_<(! boost::is_integral<Functor>::value), int>::type) [with Functor = void (*)(const std::__cxx11::basic_string<char>&); R = void; T0 = const boost::shared_ptr<const std::__cxx11::basic_string<char> >&; typename boost::enable_if_<(! boost::is_integral<Functor>::value), int>::type = int][m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:207:90:[m[K   required from here
+[01m[K/usr/include/boost/function/function_template.hpp:117:11:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’ from expression of type ‘[01m[Kconst boost::shared_ptr<const std::__cxx11::basic_string<char> >[m[K’
+  117 |           [01;31m[KBOOST_FUNCTION_RETURN[m[K(f(BOOST_FUNCTION_ARGS));
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/serialization.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:34[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:7[m[K:
+/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::MD5Sum<M>::value() [with M = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:227:102:[m[K   required from ‘[01m[Kconst char* ros::message_traits::md5sum() [with M = std::__cxx11::basic_string<char>][m[K’
+[01m[K/opt/ros/noetic/include/ros/subscribe_options.h:110:49:[m[K   required from ‘[01m[Kvoid ros::SubscribeOptions::init(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const boost::function<boost::shared_ptr<X>()>&) [with M = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:754:5:[m[K   required from ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&) [with M = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int; ros::VoidConstPtr = boost::shared_ptr<const void>][m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:207:90:[m[K   required from here
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:120:28:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getMD5Sum[m[K’ is not a member of ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’
+  120 |     return [01;31m[KM::__s_getMD5Sum()[m[K.c_str();
+      |            [01;31m[K~~~~~~~~~~~~~~~~^~[m[K
+/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::DataType<M>::value() [with M = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:236:104:[m[K   required from ‘[01m[Kconst char* ros::message_traits::datatype() [with M = std::__cxx11::basic_string<char>][m[K’
+[01m[K/opt/ros/noetic/include/ros/subscribe_options.h:111:53:[m[K   required from ‘[01m[Kvoid ros::SubscribeOptions::init(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const boost::function<boost::shared_ptr<X>()>&) [with M = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:754:5:[m[K   required from ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&) [with M = std::__cxx11::basic_string<char>; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int; ros::VoidConstPtr = boost::shared_ptr<const void>][m[K’
+[01m[K/home/billliu/trials/volans/src/offboard/src/test.cpp:207:90:[m[K   required from here
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:137:30:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getDataType[m[K’ is not a member of ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’
+  137 |     return [01;31m[KM::__s_getDataType()[m[K.c_str();
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~^~[m[K
+make[2]: *** [CMakeFiles/offboard_test.dir/build.make:63: CMakeFiles/offboard_test.dir/src/test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:674: CMakeFiles/offboard_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

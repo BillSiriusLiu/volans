@@ -1,0 +1,32 @@
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/back_and_forth.hpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/back_and_forth.hpp:43:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcnt_x[m[K’ was not declared in this scope; did you mean ‘[01m[Kcnt[m[K’?
+   43 |     for (int i = 0; i < [01;31m[Kcnt_x[m[K * cnt_y; ++i)
+      |                         [01;31m[K^~~~~[m[K
+      |                         [32m[Kcnt[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/back_and_forth.hpp:43:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcnt_y[m[K’ was not declared in this scope; did you mean ‘[01m[Kcnt[m[K’?
+   43 |     for (int i = 0; i < cnt_x * [01;31m[Kcnt_y[m[K; ++i)
+      |                                 [01;31m[K^~~~~[m[K
+      |                                 [32m[Kcnt[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:[m[K In function ‘[01m[Kvoid FlyState_update()[m[K’:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:157:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KMoveTimeCnt[m[K’
+  157 |                 period/(cnt - 1)
+      |                                 [01;31m[K^[m[K
+      |                                 [32m[K;[m[K
+  158 |     [32m[KMoveTimeCnt[m[K += 3;        //调此数值可改变飞圆形的速度
+      |     [32m[K~~~~~~~~~~~[m[K                  
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:163:46:[m[K [01;31m[Kerror: [m[K‘[01m[Know[m[K’ was not declared in this scope; did you mean ‘[01m[Kpow[m[K’?
+  163 |     pos_target_0.pose.position.x = setpoints[[01;31m[Know[m[K][0] + (setpoints[now + 1][0] - setpoints[now][0]) * (MoveTimeCnt * (cnt - 1)/period);
+      |                                              [01;31m[K^~~[m[K
+      |                                              [32m[Kpow[m[K
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:[m[K At global scope:
+[01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:307:5:[m[K [01;31m[Kerror: [m[Kconflicting declaration of C function ‘[01m[Kint main(int, char**)[m[K’
+  307 | int [01;31m[Kmain[m[K(int argc, char **argv)
+      |     [01;31m[K^~~~[m[K
+In file included from [01m[K/home/billliu/trials/volans/src/offboard/src/offboard_test.cpp:12[m[K:
+[01m[K/home/billliu/trials/volans/src/offboard/src/back_and_forth.hpp:40:5:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint main()[m[K’
+   40 | int [01;36m[Kmain[m[K()
+      |     [01;36m[K^~~~[m[K
+make[2]: *** [CMakeFiles/offboard.dir/build.make:63: CMakeFiles/offboard.dir/src/offboard_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:941: CMakeFiles/offboard.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
